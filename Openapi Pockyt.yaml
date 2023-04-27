@@ -14,7 +14,6 @@ info:
     # Pockyt Checkout: API Workflow Diagram
 
       [![Pockyt Checkout](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)]
-      (https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)
 
     # Quickstart Tutorial
    
@@ -370,7 +369,7 @@ paths:
               schema: 
                 type: string 
                 example: Error
-
+              
 
 
 
