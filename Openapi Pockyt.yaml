@@ -3,7 +3,8 @@ info:
   title: Pockyt Online Payments API's
   version: 0.1.0
   description: |-
-    # Introduction
+    # Documentation
+    ## Introduction
       
       Pockyt is a payment gateway utilized by various companies in retail and online to process payments, offering a digital wallet for seamless transfers and processing payments through point-of-sale systems, In-store payment, and Pay-out services.
    
@@ -12,7 +13,8 @@ info:
    
     # Pockyt Checkout: API Workflow Diagram
 
-      ![Pockyt Checkout](/assets/image1.png)
+      [![Pockyt Checkout](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)]
+      (https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)
 
     # Quickstart Tutorial
    
@@ -143,6 +145,7 @@ info:
     # PrePay for In-App and Wechat Mini Solutions
       Pockyt Prepare API enables merchants systems to accept mobile via- In App and Wechat Mini Programs solutions. It is important to note that this API does not support credit card payments. 
       Our suite of software developement tools provides easy prepay API intrgrations for iOs and Andriod, supporting several programming langauges, including but not limited to Java, JavaScript, and C.
+    
   license:
     name: Pockyt
     url: https://mapi.Pockyt.yunkeguan.com
