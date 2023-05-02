@@ -334,7 +334,7 @@ paths:
             type: string
         - name: merchantNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process
+          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string
@@ -346,19 +346,19 @@ paths:
             type: string
         - name: amount
           in: query
-          description: The transaction amount
+          description: The transaction amount.
           required: true
           schema: 
             type: string
         - name: currency 
           in: header
-          description: (Required) When the currency is "GBP", the settlement currency is "GBP". All other currencies settle with "USD
+          description: (Required) When the currency is "GBP", the settlement currency is "GBP". All other currencies settle with "USD.
           required: true
           schema: 
             type: string
         - name: vendor 
           in: header
-          description: (Required) The possible payment channels are "alipay","wechatpay", "paypal", "venmo", "unionpay", "creditcard","truemoney", "alipay_hk", "tng", "gcash", "dana", "kakaopay","bkash", "easypaisa","cashapppay"
+          description: (Required) The possible payment channels are "alipay","wechatpay", "paypal", "venmo", "unionpay", "creditcard","truemoney", "alipay_hk", "tng", "gcash", "dana", "kakaopay","bkash", "easypaisa","cashapppay".
           required: true
           schema: 
             type: string
@@ -394,7 +394,7 @@ paths:
             type: string
         - name: note 
           in: header
-          description: (Required) The payments notes
+          description: (Required) The payments notes.
           required: true
           schema: 
             type: string
@@ -412,7 +412,7 @@ paths:
             type: string
         - name: goodsInfo
           in: header
-          description: (Required) JSON encoded string of an array of items that the customer purchases from the merchant; Special characters are not supported. e.g [{"goods_name":"name1","quantity":"quantity1"}, {"goods_name":"name2","quantity":"quantity2"}]
+          description: (Required) JSON encoded string of an array of items that the customer purchases from the merchant; Special characters are not supported. e.g [{"goods_name":"name1","quantity":"quantity1"}, {"goods_name":"name2","quantity":"quantity2"}].
           required: true
           schema: 
             type: string
@@ -597,13 +597,13 @@ paths:
             type: number
         - name: settleCuurency
           in: header
-          description: (Required) The Supported settlement currenices is "USD"
+          description: (Required) The Supported settlement currenices is "USD".
           required: true
           schema: 
             type: string
         - name: Vendor
           in: header
-          description: (Required) possible payment channels "alipay" , wechatpay"
+          description: (Required) possible payment channels "alipay" , wechatpay".
           required: true
           schema: 
             type: string
@@ -615,7 +615,7 @@ paths:
             type: string
         - name: Openid
           in: header
-          description: (Required) when terminal='MINIPROGRAM' and vendor='wechatpay'
+          description: (Required) when terminal='MINIPROGRAM' and vendor='wechatpay'.
           required: true
           schema: 
             type: string
@@ -710,19 +710,19 @@ paths:
       parameters:
           - name: merchantNo
             in: header
-            description: (Required) The merchant's ID
+            description: (Required) The merchant's ID.
             required: true
             schema: 
                type: string     
           - name: storeNo
             in: header
-            description: (Required) The store's ID 
+            description: (Required) The store's ID. 
             required: true
             schema: 
               type: string  
           - name: refundAmount
             in: header
-            description: (Required) The amount that needs to be refunded 
+            description: (Required) The amount that needs to be refunded.
             required: true
             schema: 
               type: string 
@@ -817,13 +817,13 @@ paths:
       parameters:
         - name: merchantNo
           in: header
-          description: (Required)- the merchant`s ID
+          description: (Required)- the merchant`s ID.
           required: true
           schema: 
             type: string     
         - name: storeNo
           in: header
-          description: (Required) the store ID
+          description: (Required) the store ID.
           required: true
           schema: 
             type: string  
@@ -835,13 +835,13 @@ paths:
             type: string       
         - name: reference 
           in: header
-          description: (Required) reference number of orginial sale
+          description: (Required) reference number of orginial sale.
           required: true
           schema: 
             type: number
         - name: VerifySign
           in: header
-          description: (Required) - the paramter signature
+          description: (Required) - the paramter signature.
           required: true
           schema: 
             type: string
@@ -906,13 +906,13 @@ paths:
             type: string     
         - name: merchantNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process
+          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string  
         - name: storeNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process
+          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string       
@@ -936,7 +936,7 @@ paths:
             type: string
         - name: autoIpnUrl
           in: header
-          description: (Required) The asynchronous callback address Note If autoIpUrl is not null when the user authorization is complete, Pockyt will send an asynchronous callback notification containing parameters such as autoDebitNo, autoReference, vendor, time, note and verifySign
+          description: (Required) The asynchronous callback address Note If autoIpUrl is not null when the user authorization is complete, Pockyt will send an asynchronous callback notification containing parameters such as autoDebitNo, autoReference, vendor, time, note and verifySign.
           required: true
           schema: 
             type: string
@@ -1019,7 +1019,7 @@ paths:
          parameters:
           - name: merchantNo
             in: header
-            description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process
+            description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
             required: true
             schema: 
               type: string     
@@ -1043,7 +1043,7 @@ paths:
               type: string
           - name: verifySign
             in: header
-            description: (Required) the calculated MD5 value used to encrypt the request message
+            description: (Required) the calculated MD5 value used to encrypt the request message.
             required: true
             schema: 
               type: string
@@ -1102,7 +1102,7 @@ paths:
       parameters:
         - name: merchantNo
           in: header
-          description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process
+          description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string     
@@ -1120,13 +1120,13 @@ paths:
             type: string       
         - name: amount
           in: header
-          description: ( Required ) The amount of transaction
+          description: ( Required ) The amount of transaction.
           required: true
           schema: 
             type: string
         - name: currecncy
           in: header
-          description: ( Required ) The amount of transaction
+          description: ( Required ) The amount of transaction.
           required: true
           schema: 
             type: string
@@ -1144,13 +1144,13 @@ paths:
             type: string
         - name: inpnUrl
           in: header
-          description: ( Required ) The asynchronous callback address
+          description: ( Required ) The asynchronous callback address.
           required: true
           schema: 
             type: string
         - name: verifySign
           in: header
-          description: (Required) the calculated MD5 value used to encrypt the request message
+          description: (Required) the calculated MD5 value used to encrypt the request message.
           required: true
           schema: 
             type: string
@@ -1209,7 +1209,7 @@ paths:
         parameters:
           - name: merchantNo
             in: header
-            description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process
+            description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
             required: true
             schema: 
               type: string
@@ -1227,7 +1227,7 @@ paths:
               type: string
           - name: verifySign
             in: header
-            description: (Required) the calculated MD5 value used to encrypt the request message
+            description: (Required) the calculated MD5 value used to encrypt the request message.
             required: true
             schema: 
               type: string
@@ -1322,7 +1322,7 @@ paths:
                   type: string
             - name: amount
               in: header
-              description: The transaction amount
+              description: The transaction amount.
               required: true
               schema: 
                 type: number
@@ -1340,19 +1340,19 @@ paths:
                   type: number
             - name: transactionType
               in: header
-              description: The possible values are payment, refund, and void
+              description: The possible values are payment, refund, and void.
               required: true
               schema: 
                       type: string
             - name: transactionStatus
               in: header
-              description: The status of transaction
+              description: The status of transaction.
               required: true
               schema: 
                      type: string
             - name: currency
               in: header
-              description: The supported transaction currency are "USD", "CNY", "PHP","IDR", "KRW", "HKD", "THB", "MYR", "GBP", "BDT", "PKR
+              description: The supported transaction currency are "USD", "CNY", "PHP","IDR", "KRW", "HKD", "THB", "MYR", "GBP", "BDT", "PKR.
               required: true
               schema: 
                      type: string
