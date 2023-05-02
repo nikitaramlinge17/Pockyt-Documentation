@@ -273,9 +273,6 @@ info:
 
       It is recommended for the merchant system to validate the parameters in the callback information using verifySign. This is to eliminate the possibility of processing tampered information. Pockyt`s callback function will contain the following parameters along with the IPN.
 
-     
-
-
   license:
     name: Pockyt
     url: https://mapi.Pockyt.yunkeguan.com
@@ -361,13 +358,13 @@ paths:
             type: string
         - name: merchantNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string
         - name: storeNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true         
           schema: 
             type: string
@@ -379,79 +376,79 @@ paths:
             type: string
         - name: currency 
           in: header
-          description: (Required) When the currency is "GBP", the settlement currency is "GBP". All other currencies settle with "USD.
+          description: When the currency is "GBP", the settlement currency is "GBP". All other currencies settle with "USD.
           required: true
           schema: 
             type: string
         - name: vendor 
           in: header
-          description: (Required) The possible payment channels are "alipay","wechatpay", "paypal", "venmo", "unionpay", "creditcard","truemoney", "alipay_hk", "tng", "gcash", "dana", "kakaopay","bkash", "easypaisa","cashapppay".
+          description: The possible payment channels are "alipay","wechatpay", "paypal", "venmo", "unionpay", "creditcard","truemoney", "alipay_hk", "tng", "gcash", "dana", "kakaopay","bkash", "easypaisa","cashapppay".
           required: true
           schema: 
             type: string
         - name: ipUrl 
           in: header
-          description: (Required) The asynchronous notification address. The IPN URL must be secure. For more information, visit the IPN section.    
+          description: The asynchronous notification address. The IPN URL must be secure. For more information, visit the IPN section.    
           required: true
           schema: 
             type: string
         - name: callbackUrl 
           in: header
-          description: (Required) The synchronous callback HTTP address to receive notification messages for events. The callback URL follows macro substitution rules like xxxcallback_url?trans_no= {amount}&amount={amount}. Then Pockyt automatically replaces the values of {} for a list of parameters.
+          description: The synchronous callback HTTP address to receive notification messages for events. The callback URL follows macro substitution rules like xxxcallback_url?trans_no= {amount}&amount={amount}. Then Pockyt automatically replaces the values of {} for a list of parameters.
           required: true
           schema: 
             type: string
         - name: reference 
           in: header
-          description: (Required) The Invoice Number of the transaction in the merchant's system.  
+          description: The Invoice Number of the transaction in the merchant's system.  
           required: true
           schema: 
             type: string
         - name: terminal
           in: header
-          description: (Required) The possible values are "ONLINE" for desktop/web app and "WAP" for mobile, YIP for Braintree.
+          description: The possible values are "ONLINE" for desktop/web app and "WAP" for mobile, YIP for Braintree.
           required: true
           schema: 
             type: string
         - name: description 
           in: header
-          description: (Required) The description of the transaction will be displayed on the invoice.
+          description: The description of the transaction will be displayed on the invoice.
           required: true
           schema: 
             type: string
         - name: note 
           in: header
-          description: (Required) The payments notes.
+          description: The payments notes.
           required: true
           schema: 
             type: string
         - name: OsType 
           in: header
-          description: (Required) Required when terminal is WAP or APP, the possible values are "IOS" and "ANDROID".
+          description:  Required when terminal is WAP or APP, the possible values are "IOS" and "ANDROID".
           required: true
           schema: 
             type: string
         - name: timeout 
           in: header
-          description: (Required) The timeout in minutes. The default value is 120.
+          description:  The timeout in minutes. The default value is 120.
           required: true
           schema: 
             type: string
         - name: goodsInfo
           in: header
-          description: (Required) JSON encoded string of an array of items that the customer purchases from the merchant; Special characters are not supported. e.g [{"goods_name":"name1","quantity":"quantity1"}, {"goods_name":"name2","quantity":"quantity2"}].
+          description:  JSON encoded string of an array of items that the customer purchases from the merchant; Special characters are not supported. e.g [{"goods_name":"name1","quantity":"quantity1"}, {"goods_name":"name2","quantity":"quantity2"}].
           required: true
           schema: 
             type: string
         - name: creditType
           in: header
-          description: (Required) The payment type. This is only required when vendor = creditcard. The values are "normal" or "CIT". The default is "normal".
+          description:  The payment type. This is only required when vendor = creditcard. The values are "normal" or "CIT". The default is "normal".
           required: true
           schema: 
             type: string
         - name: verifySign
           in: header
-          description: Required- Required- the parameter signature. It is the calculated MD5 hash value of the API token used to encrypt the request message and authorize transaction requests. For more information, visit Signing API Parameters.
+          description:  the parameter signature. It is the calculated MD5 hash value of the API token used to encrypt the request message and authorize transaction requests. For more information, visit Signing API Parameters.
           required: true
           schema: 
             type: string
@@ -511,37 +508,37 @@ paths:
       parameters:
         - name: paymentMethodNonce
           in: header
-          description: (Required) It is a one-time use reference ID of the payment method.
+          description:  It is a one-time use reference ID of the payment method.
           required: true
           schema: 
            type: string
         - name: merchantNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
            type: string
         - name: paymentmethod
           in: header
-          description: (Required) Identifier of the wallet type being used.
+          description:  Identifier of the wallet type being used.
           required: true
           schema: 
             type: string
         - name: storeNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt's support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
           required: true
           schema: 
             type: string
         - name: transactionNo
           in: header
-          description: (Required) The ID of the transaction stored in the Pockyt system.
+          description:  The ID of the transaction stored in the Pockyt system.
           required: true
           schema: 
             type: string
         - name: verifySign
           in: header
-          description: (Required) The parameter signature; used for authenticating and authorizing transaction requests.
+          description:  The parameter signature; used for authenticating and authorizing transaction requests.
           required: true
           schema: 
             type: string
@@ -600,61 +597,61 @@ paths:
       parameters:
         - name: merchantNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt's support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
           required: true
           schema: 
              type: string     
         - name: storeNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt's support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
           required: true
           schema: 
             type: string  
         - name: Amount
           in: header
-          description: (Required) The payment amount that the merchant requests to receive in currency order.
+          description:  The payment amount that the merchant requests to receive in currency order.
           required: true
           schema: 
             type: number  
         - name: currency
           in: header
-          description: (Required) Support transaction currenices are "USD", "CNY".
+          description:  Support transaction currenices are "USD", "CNY".
           required: true
           schema: 
             type: number
         - name: settleCuurency
           in: header
-          description: (Required) The Supported settlement currenices is "USD".
+          description: The Supported settlement currenices is "USD".
           required: true
           schema: 
             type: string
         - name: Vendor
           in: header
-          description: (Required) possible payment channels "alipay" , wechatpay".
+          description:  Possible payment channels "alipay" , wechatpay".
           required: true
           schema: 
             type: string
         - name: ipnUrl
           in: header
-          description: (Required) The instant payment notification handler URL; the IPN URL must be secure.
+          description:  The instant payment notification handler URL; the IPN URL must be secure.
           required: true
           schema: 
             type: string
         - name: Openid
           in: header
-          description: (Required) when terminal='MINIPROGRAM' and vendor='wechatpay'.
+          description: Required when terminal='MINIPROGRAM' and vendor='wechatpay'.
           required: true
           schema: 
             type: string
         - name: Reference
           in: header
-          description: (Required) The invoice number in the merchant's system.
+          description:  The invoice number in the merchant's system.
           required: true
           schema: 
             type: string
         - name: Terminal
           in: header
-          description: (Required) The possible values are "MINIPROGRAM", "APP".
+          description:  The possible values are "MINIPROGRAM", "APP".
           required: true
           schema: 
             type: string
@@ -737,43 +734,43 @@ paths:
       parameters:
           - name: merchantNo
             in: header
-            description: (Required) The merchant's ID.
+            description:  The merchant's ID.
             required: true
             schema: 
                type: string     
           - name: storeNo
             in: header
-            description: (Required) The store's ID. 
+            description:  The store's ID. 
             required: true
             schema: 
               type: string  
           - name: refundAmount
             in: header
-            description: (Required) The amount that needs to be refunded.
+            description:  The amount that needs to be refunded.
             required: true
             schema: 
               type: string 
           - name: currency
             in: header
-            description: (Required)The supported settlement currency "USD".
+            description: The supported settlement currency "USD".
             required: true
             schema: 
               type: number
           - name: settleCuurency
             in: header
-            description: (Required)The supported settlement currency "USD".
+            description: The supported settlement currency "USD".
             required: true
             schema: 
               type: number
           - name: transactionNo
             in: header
-            description: Required Transaction number of orginal sale.
+            description:  Transaction number of orginal sale.
             required: true
             schema: 
               type: string
           - name: reference
             in: header
-            description: (Required) reference number of original sale.
+            description:  reference number of original sale.
             required: true
             schema: 
               type: string
@@ -785,7 +782,7 @@ paths:
               type: string
           - name: verifySign
             in: header
-            description: (Required) the parameter signature.
+            description:  the parameter signature.
             required: true
             schema: 
               type: string
@@ -844,31 +841,31 @@ paths:
       parameters:
         - name: merchantNo
           in: header
-          description: (Required)- the merchant`s ID.
+          description:  the merchant`s ID.
           required: true
           schema: 
             type: string     
         - name: storeNo
           in: header
-          description: (Required) the store ID.
+          description:  the store ID.
           required: true
           schema: 
             type: string  
         - name: transactionNo
           in: header
-          description: (Required) Transaction number of original sale.
+          description: Transaction number of original sale.
           required: true
           schema: 
             type: string       
         - name: reference 
           in: header
-          description: (Required) reference number of orginial sale.
+          description:  reference number of orginial sale.
           required: true
           schema: 
             type: number
         - name: VerifySign
           in: header
-          description: (Required) - the paramter signature.
+          description:  the paramter signature.
           required: true
           schema: 
             type: string
@@ -933,13 +930,13 @@ paths:
             type: string     
         - name: merchantNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string  
         - name: storeNo
           in: header
-          description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description: A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string       
@@ -951,43 +948,43 @@ paths:
             type: number
         - name: osType
           in: header
-          description: (Required) - the terminal is "WAP" or "APP", return this parameter.The possible value is "IOS", "ANDROID".
+          description:  The terminal is "WAP" or "APP", return this parameter.The possible value is "IOS", "ANDROID".
           required: true
           schema: 
             type: string
         - name: osVersion
           in: header
-          description: (Required) - the terminal is "WAP" or "APP", return this parameter.
+          description:  The terminal is "WAP" or "APP", return this parameter.
           required: false
           schema: 
             type: string
         - name: autoIpnUrl
           in: header
-          description: (Required) The asynchronous callback address Note If autoIpUrl is not null when the user authorization is complete, Pockyt will send an asynchronous callback notification containing parameters such as autoDebitNo, autoReference, vendor, time, note and verifySign.
+          description:  The asynchronous callback address Note If autoIpUrl is not null when the user authorization is complete, Pockyt will send an asynchronous callback notification containing parameters such as autoDebitNo, autoReference, vendor, time, note and verifySign.
           required: true
           schema: 
             type: string
         - name: autoRedirectUrl
           in: header
-          description: (Required) It synchronizes the callback address.
+          description:  It synchronizes the callback address.
           required: true
           schema: 
             type: string
         - name: autoRefereence
           in: header
-          description: (Required) The invoice number of the auto-debit in the merchant's system.
+          description:  The invoice number of the auto-debit in the merchant's system.
           required: true
           schema: 
             type: string
         - name: terminal
           in: header
-          description: (Required) The possible values are " Online", "WAP", "APP".
+          description:  The possible values are " Online", "WAP", "APP".
           required: true
           schema: 
             type: string
         - name: verifySign
           in: header
-          description: (Required) the calculated MD5 value used to encrypt the request message.
+          description:  The calculated MD5 value used to encrypt the request message.
           required: true
           schema: 
             type: string
@@ -1046,31 +1043,31 @@ paths:
          parameters:
           - name: merchantNo
             in: header
-            description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+            description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
             required: true
             schema: 
               type: string     
           - name: storeNo
             in: header
-            description: (Required) A unique value created and assigned by Pockyt`s support team during the onboarding process.
+            description: A unique value created and assigned by Pockyt`s support team during the onboarding process.
             required: true
             schema: 
               type: string  
           - name: autoDebitNo
             in: header
-            description: (Required) The auto-debit record ID generated by Pockyt.
+            description:  The auto-debit record ID generated by Pockyt.
             required: true
             schema: 
               type: string       
           - name: grantType
             in: header
-            description: (Required) Possible value are 'AUTHORIZATION_CODE','REFRESH_TOKEN'.
+            description:  Possible value are 'AUTHORIZATION_CODE','REFRESH_TOKEN'.
             required: true
             schema: 
               type: string
           - name: verifySign
             in: header
-            description: (Required) the calculated MD5 value used to encrypt the request message.
+            description:  The calculated MD5 value used to encrypt the request message.
             required: true
             schema: 
               type: string
@@ -1129,55 +1126,55 @@ paths:
       parameters:
         - name: merchantNo
           in: header
-          description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string     
         - name: storeNo
           in: header
-          description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
+          description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
           required: true
           schema: 
             type: string  
         - name: autoDebitNo
           in: header
-          description: Required - The auto-debit record ID generated by Pockyt.
+          description:  The auto-debit record ID generated by Pockyt.
           required: true
           schema: 
             type: string       
         - name: amount
           in: header
-          description: ( Required ) The amount of transaction.
+          description:  The amount of transaction.
           required: true
           schema: 
             type: string
         - name: currecncy
           in: header
-          description: ( Required ) The amount of transaction.
+          description: The amount of transaction.
           required: true
           schema: 
             type: string
         - name: settleCurrency
           in: header
-          description: ( Required ) The supported settlement currency is "USD".
+          description:  The supported settlement currency is "USD".
           required: true
           schema: 
             type: string
         - name: reference
           in: header
-          description: ( Required ) The Invoice Number of the transaction in the merchant's system.
+          description:  The Invoice Number of the transaction in the merchant's system.
           required: true
           schema: 
             type: string
         - name: inpnUrl
           in: header
-          description: ( Required ) The asynchronous callback address.
+          description: The asynchronous callback address.
           required: true
           schema: 
             type: string
         - name: verifySign
           in: header
-          description: (Required) the calculated MD5 value used to encrypt the request message.
+          description:  The calculated MD5 value used to encrypt the request message.
           required: true
           schema: 
             type: string
@@ -1236,25 +1233,25 @@ paths:
         parameters:
           - name: merchantNo
             in: header
-            description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
+            description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
             required: true
             schema: 
               type: string
           - name: storeNo
             in: header
-            description: Required - A unique value created and assigned by Pockyt`s support team during the onboarding process.
+            description: A unique value created and assigned by Pockyt`s support team during the onboarding process.
             required: true
             schema: 
               type: string  
           - name: autoDebitNo
             in: header
-            description: Required - The auto-debit record ID generated by Pockyt.
+            description: The auto-debit record ID generated by Pockyt.
             required: true
             schema: 
               type: string
           - name: verifySign
             in: header
-            description: (Required) the calculated MD5 value used to encrypt the request message.
+            description:  The calculated MD5 value used to encrypt the request message.
             required: true
             schema: 
               type: string
