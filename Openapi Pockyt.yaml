@@ -49,8 +49,6 @@ info:
     
     ## Getting Started with Online Payment APIs
       Our Online digital wallet payment processing APIs help you to understand technical concepts and provide step-by-step tutorials for implementing them.
-
-    ## Getting started with Pockyt`s B2C Payouts Service
     
     ### Pockyt Developement Sandbox
       High level steps
@@ -274,6 +272,8 @@ info:
       **Callback parameters**
 
       It is recommended for the merchant system to validate the parameters in the callback information using verifySign. This is to eliminate the possibility of processing tampered information. Pockyt`s callback function will contain the following parameters along with the IPN.
+
+      ## Getting started with Pockyt`s B2C Payouts Service
 
 
   license:
