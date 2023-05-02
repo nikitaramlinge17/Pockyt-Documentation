@@ -339,7 +339,7 @@ components:
         Generate your JWT when you log in.
       type: http
       scheme: bearer
-      bearerFormat: JWT  
+      bearerFormat: JWT    
 paths:  
   /secure-pay:  
     post:
@@ -782,7 +782,7 @@ paths:
               type: string
           - name: verifySign
             in: header
-            description:  the parameter signature.
+            description:  The parameter signature.
             required: true
             schema: 
               type: string
