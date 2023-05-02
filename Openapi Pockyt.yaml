@@ -319,7 +319,7 @@ components:
 paths:  
   /secure-pay:  
     post:
-      summary: Secure pay
+      summary: Secure Pay
       description: Enables merchant websites to send customers to Pockyt for payment processing.
       operationId: secure-pay 
       deprecated: false
