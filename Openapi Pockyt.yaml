@@ -11,7 +11,7 @@ info:
     # Overview
       Pockyt API provides a powerful solution for integrating custom payment forms seamlessly into your website or application. By utilizing both client and server-side code the API enables the creation of a user friendly checkout form with all necessary payment elements included for the chosen payment method. This allows for a streamlined payment process making it easier for customers to complete transactions and for businesses to manage their payment processing.
    
-    # Pockyt Checkout: API Workflow Diagram
+    Pockyt Checkout: API Workflow Diagram
 
       ![Pockyt Checkout](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)
 
@@ -54,7 +54,7 @@ info:
     ## Getting Started with Online Payment APIs
       Our Online digital wallet payment processing APIs help you to understand technical concepts and provide step-by-step tutorials for implementing them.
     
-    ## Pockyt Developement Sandbox
+    ### Pockyt Developement Sandbox
       High level steps
       
       * STEP 1 - Setting up a development account with Pockyt.
@@ -62,7 +62,7 @@ info:
         
       For Obtaining API credentails, you need two sets of credentials from Pockyt to complete your implementation project.
           
-    ## Step 1 - Sandbox API Credentials and Account Information
+    ### Step 1 - Sandbox API Credentials and Account Information
         
       Enables you to test the entire transaction network relevant to your use cases.
       
@@ -78,7 +78,7 @@ info:
         8 To ensure optimal integrations and testing, your Sandbox environment should feature the front-end user interface for online payment workflows.
         9 By following these steps, you can easily set up a Pockyt Sandbox account to test and refine your integration with Pockyt's API, providing a secure and user-friendly payment experience to your customers.
         
-    ## Step 2 - Production API Credentials and Account Information
+    ### Step 2 - Production API Credentials and Account Information
       Enables you to begin processing live transactions from digital wallets and other payment methods. 
         
       Perform the following steps to obtain your Production API credentials:
@@ -91,9 +91,9 @@ info:
           6 Log in to your account to collect your API token, which is required to build API parameters.
           7 Each API request includes a verifySign parameter, which is the calculated MD5 hash value of your API token, allowing Pockyt to authenticate and authorize your API calls. For more information, visit "Signing API Parameters".
     
-    ## Step 3 - Installing the test digital wallet applications.
+    ### Step 3 - Installing the test digital wallet applications.
 
-    # Payment Scenarios and API Endpoints
+    ## Payment Scenarios and API Endpoints
     
       This section provides a step-by-step summary of the primary payment scenarios and explanations of the API endpoints relevant to each use case.
       
@@ -101,7 +101,7 @@ info:
       * Pockyt Checkout method** (referred to as the "SecurePay API") allows you to redirect customers to a Pockyt-hosted page for checkout. This is a favorable alternative payment solution if a business cannot host its payment forms for some reason.
       * Pockyt Integrated Option** (referred to as the "PrePay API")  is a more suitable option for businesses looking to customize their payment form and retain complete control over the latter. This method allows businesses/merchants to build their UI for all the payment methods preferred by their customers.
     
-    # Implementation Option 1 - Checkout API
+    ### Implementation Option 1 - Checkout API
       
       Using the SecurePay API, merchant websites can send customers to receive payments from Pockyt.    
       
@@ -116,14 +116,14 @@ info:
           7 To receive the payment results, the merchant website creates an IPN listener page and uses its URL in the request body of the secure-pay API.
           8 The merchant's website displays the payment confirmation message to the customer.
     
-    # Implementation Option 2 - Integrated Payments
+    ### Implementation Option 2 - Integrated Payments
     
       Pockyt Integrated Payments offers a highly customizable payment form for businesses that want to retain complete control over the payment process. 
       
       This method enables businesses to build their user interface for all preferred payment methods, providing a seamless payment experience for their customers.
       Merchants have the option to integrate Pockyt's APIs directly into their system for self-hosted mobile payments, or they can accept customer payments by integrating their system with Braintree, using both the /secure-pay API and the /process API. 
         
-    # Pockyt Integrated Payments Workflow (Braintree)
+      Pockyt Integrated Payments Workflow (Braintree)
       Integrating the merchant system with Braintree will allow your customers to utilize digital wallets such as Google Pay, Apple Pay, Paypal, and Venmo to make payments for purchases secured on your website.
       You can use Pockyt`s process API (discussed below) and/or secure-pay API (discussed earlier) to integrate with Braintree. 
       
@@ -139,10 +139,10 @@ info:
       * Pockyt uses the payment_method_nonce and transaction ID to request that Braintree process the payment.
       *  Braintree complies with the request and passes the transaction results to Pockyt, who relays them back to the merchant website. 
     
-      # Pockyt Integrated Payments: Process + SecurePay API Workflow Diagram
+      Pockyt Integrated Payments: Process + SecurePay API Workflow Diagram
       ![Process + Securepay API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image2.png)
     
-    # PrePay for In-App and Wechat Mini Solutions
+    ### PrePay for In-App and Wechat Mini Solutions
       Pockyt Prepare API enables merchants systems to accept mobile via- In App and Wechat Mini Programs solutions. It is important to note that this API does not support credit card payments. 
       Our suite of software developement tools provides easy prepay API intrgrations for iOs and Andriod, supporting several programming langauges, including but not limited to Java, JavaScript, and C.
       
@@ -155,7 +155,7 @@ info:
       * Pockyt will advance the request to the digital wallet server that will process the payment and notify Pockyt about the transaction details.
       * Pockyt will then relay the results to the merchant`s system.
 
-      # Pockyt Integrated Payments: Prepay API Workflow Diagram
+      Pockyt Integrated Payments: Prepay API Workflow Diagram
       ![Prepay API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image3.png)
     
     # Customer Refunds
@@ -243,7 +243,6 @@ info:
       * Keep in mind that the IPN messages are not synchronous with the merchant`s website and there is always a chance for these notifications to get lost or delayed due to poor internet connectivity.
 
       Pockyt`s IPN service continues to resend the IPN messages until the listener page acknowledges. If the listener page fails to acknowledge the messages, it will continue to receive them up to eight times in two hours.
-
 
       **Callback parameters**
 
