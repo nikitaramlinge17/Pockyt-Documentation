@@ -166,7 +166,9 @@ info:
     The following steps depicts Refund API workflow:
 
       1 The customer will apply for a refund on the merchant`s website using the transaction number.
+      
       2 The merchant`s system will use the transaction number to identify the exact details of the original purchase and call refund API which will request the digital wallet server to refund the payment originally made by the customer.
+      
       3 The wallet server will reimburse the transaction amount to the customer as well as alert the latter about the refund via a notification.
        
       ![Refund API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image4.png) 
@@ -179,10 +181,15 @@ info:
     The following steps depicts Cancel API workflow:
 
       1 The customer applies for payment on the merchant's website after shopping.
-      2 If the customer is unable to confirm payment due to connectivity issues, they can select the **cancel** option in the payment UI.
+
+      2 If the customer is unable to confirm payment due to connectivity issues, they can select the cancel option in the payment UI.
+
       3 The merchant's system calls Pockyt's /cancel API to cancel the payment transaction.
+
       4 Pockyt notifies the digital wallet server to abandon the transaction.
+
       5 The digital wallet server cancels the transaction and notifies Pockyt of the cancellation status.
+
       6 Pockyt relays the information to the merchant's system.
 
       ![Cancel API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image5.png)
@@ -204,13 +211,21 @@ info:
     The following steps depicts Recurring Payments API workflow:
     
       1 Create a vendor list page that includes vendors supported by Pockyt.
+
       2 Call the consult API to retrieve an authorization URL that redirects the customer to a vendor`s interface to authorize the merchant for future payments.
+
       3 Based on the terminal value, Pockyt will provide either a normalURL or applinkURL and generate an autoDebitNo. unique to the Pockyt system.
+
       4 The customer will authorize the merchant to deduct payments from their wallet via the vendor's interface.
+
       5 The vendor will redirect the customer back to a redirection URL (autoRedirectURL) provided by the merchant in the request body of the consult API along with passing the authorization result to it.
+
       6 Call the apply-token API using the autoDebitNo. in the request parameter to get the token from the vendor.
+
       7 Use the pay API, following a fixed schedule, to initiate an auto-debit payment for any purchase made and process the payment results based on the transaction status returned by Pockyt.
+
       8 Use the revoke API to cancel the authorization agreement if the customer requests it.
+
       9 Once Pockyt receives the revoke request, the access token will become invalid, and the merchant system will be unable to access the user resource scope.
 
     # Apendix B: Tutorial: Calculate VeriSign Value
@@ -231,8 +246,11 @@ info:
     **Follow the steps below to implement the VeriSign feature**
 
     1 Sort the parameters alphabetically according to the parameter name.
+
     2 Concatenate the parameter names and values using '=' and '&' characters.
+
     3 Append the MD5 hash value of your API token to the end of your parameters with the '&'prefix.
+
     4 Calculate the MD5 hash value of the Step 3 result.
 
     # Appendix C:Tutorial: Instant Payment Notifications
