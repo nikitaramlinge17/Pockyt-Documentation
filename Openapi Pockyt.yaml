@@ -319,7 +319,7 @@ components:
 paths:  
   /secure-pay:  
     post:
-      summary: Secure payment
+      summary: Secure pay
       description: Enables merchant websites to send customers to Pockyt for payment processing.
       operationId: secure-pay 
       deprecated: false
@@ -475,7 +475,7 @@ paths:
                 example: Error
   /process:            
     post:
-      summary: process
+      summary: Process
       description: Enables merchant systems to call  process API to initiate transaction.
       operationId: process 
       deprecated: false
@@ -564,7 +564,7 @@ paths:
                 example: Error
   /prepay:              
     post:
-      summary: prepay
+      summary: Prepay
       description: Manages mobile payments via in-app or WeChat Mini Program solutions.
       operationId: prepay
       deprecated: false
@@ -701,7 +701,7 @@ paths:
                 example: Error
   /refund:
     post:
-      summary: refund
+      summary: Refund
       description: Enables merchant systems to refund  payments in ease of use.
       operationId: refund
       deprecated: false
@@ -808,7 +808,7 @@ paths:
                 example: Error    
   /cancel:
     post:
-      summary: cancel
+      summary: Cancel
       description: Enables customer to cancel the purchase. 
       operationId: cancel
       deprecated: false
@@ -891,7 +891,7 @@ paths:
                        example: Error    
   /consult:
     post:
-      summary: consult
+      summary: Consult
       description: Enables customer to cancel the purchase. 
       operationId: consult
       deprecated: false
@@ -1010,7 +1010,7 @@ paths:
                      example: Error 
   /apply-token:
       post:
-         summary: apply-token
+         summary: Apply Token
          description: Enables you to obtain a new AccessToken or refresh your existing AccessToken. 
          operationId: apply-token
          deprecated: false
@@ -1093,7 +1093,7 @@ paths:
                                 example: Error 
   /pay:
    post:
-      summary: pay
+      summary: Pay
       description: Enables you to to initiate a payment and process the results based on the status and operation instructions provided by Yuansfer, utilize this interface. Deductions will be made using  AccessToken. 
       operationId: pay
       deprecated: false
@@ -1200,7 +1200,7 @@ paths:
                     example: Error 
   /revoke:
       post:
-        summary: revoke
+        summary: Revoke
         description: Enables you to  inititae the authoization verification URL for an authorization that occurs at Pockyt. It is used to authorize the user based on the information provided in the request, making it an essential part of the authorization process.
         operationId: revovke
         deprecated: false
