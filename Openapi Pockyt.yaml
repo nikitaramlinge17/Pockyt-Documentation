@@ -11,10 +11,7 @@ info:
     ## Overview
       Pockyt API provides a powerful solution for integrating custom payment forms seamlessly into your website or application. By utilizing both client and server-side code the API enables the creation of a user friendly checkout form with all necessary payment elements included for the chosen payment method. This allows for a streamlined payment process making it easier for customers to complete transactions and for businesses to manage their payment processing.
    
-    Pockyt Checkout: API Workflow Diagram
-
-      ![Pockyt Checkout](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)
-
+      
     ## Quickstart Tutorial
    
       Pockyt offers a secure and user-friendly payment experience for customers, supporting a variety of payment methods such as digital wallets and card payments. Pockyt partners with multiple digital wallet providers, enabling businesses to attract and retain digital-native customers from all over the world. n endpoint. We recommend completing our quickstart tutorial on Pockyt products to learn key concepts. 
@@ -117,6 +114,10 @@ info:
           6 Pockyt relays the transaction results to the merchant's website using the IPN callback function.
           7 To receive the payment results, the merchant website creates an IPN listener page and uses its URL in the request body of the secure-pay API.
           8 The merchant's website displays the payment confirmation message to the customer.
+
+          Pockyt Checkout: API Workflow Diagram
+          ![Pockyt Checkout](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)
+
     
     ### Implementation Option 2 - Integrated Payments
     
