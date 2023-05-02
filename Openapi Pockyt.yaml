@@ -163,7 +163,7 @@ info:
 
     ## Refund API Workflow
       * The customer will apply for a refund on the merchant`s website using the transaction number.
-      * The merchant`s system will use the transaction number to identify the exact details of the original purchase and call Pockyt`s refund API which will request the digital wallet server to refund the payment originally made by the customer.
+      * The merchant`s system will use the transaction number to identify the exact details of the original purchase and call refund API which will request the digital wallet server to refund the payment originally made by the customer.
       * The wallet server will reimburse the transaction amount to the customer as well as alert the latter about the refund via a notification.
        
       ![Refund API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image4.png) 
