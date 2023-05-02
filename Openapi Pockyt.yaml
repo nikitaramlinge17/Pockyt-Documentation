@@ -8,14 +8,14 @@ info:
       
       Pockyt is a payment gateway utilized by various companies in retail and online to process payments, offering a digital wallet for seamless transfers and processing payments through point-of-sale systems, In-store payment, and Pay-out services.
    
-    # Overview
+    ## Overview
       Pockyt API provides a powerful solution for integrating custom payment forms seamlessly into your website or application. By utilizing both client and server-side code the API enables the creation of a user friendly checkout form with all necessary payment elements included for the chosen payment method. This allows for a streamlined payment process making it easier for customers to complete transactions and for businesses to manage their payment processing.
    
     Pockyt Checkout: API Workflow Diagram
 
       ![Pockyt Checkout](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image1.png)
 
-    # Quickstart Tutorial
+    ## Quickstart Tutorial
    
       Pockyt offers a secure and user-friendly payment experience for customers, supporting a variety of payment methods such as digital wallets and card payments. Pockyt partners with multiple digital wallet providers, enabling businesses to attract and retain digital-native customers from all over the world. n endpoint. We recommend completing our quickstart tutorial on Pockyt products to learn key concepts. 
       1 - Hosted Pages
@@ -27,20 +27,20 @@ info:
       *  A Sandbox API's Base URL  "https://mapi.yuansfer.yunkeguan.com"
       *  Production API's Base URL's "https://mapi.yuansfer.com/"
 
-    # Payment Methods
+    ## Payment Methods
 
       Below are our payment integration methods, so you can choose what works best for you
    
       * Asia Pacific Based Digital Wallets Alipay, WeChatPay, UnionPay, TrueMoney, AliPay HK, TNG, GCash, Dana, KakaoPay, BKash, EasyPasia
       * US Based Payment Methods Major Credit Cards Visa, MasterCard, Discover, Amex, Union Pay, Digital Wallets Paypal, Venmo, CashApp
        
-    # Payment Integration Types
+    ## Payment Integration Types
       
       * **Online**: Online Payments enable e-wallet and payment acceptance, seamlessly integrated into your e-commerce and point-of-sale (POS) platforms. Refer the Documentation.
       * **In-store**: In-store payments enable clients to make hassle-free payments through their mobile wallets while maintaining operational efficiency in your stores. Refer the Documentation.
       * **Pay-out**: Effortlessly make payments to influencers, sellers, and contractors worldwide through their preferred payment methods, including digital wallets (such as PayPal and Alipay) and traditional bank accounts. Refer the Documentation
    
-    # Prerequisites 
+    ## Prerequisites 
       
       Please ensure you have the following accounts and test devices available to complete your implementation project.	
       
