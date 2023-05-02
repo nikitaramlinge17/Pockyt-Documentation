@@ -273,7 +273,7 @@ info:
 
       It is recommended for the merchant system to validate the parameters in the callback information using verifySign. This is to eliminate the possibility of processing tampered information. Pockyt`s callback function will contain the following parameters along with the IPN.
 
-      ## Getting started with Pockyt`s B2C Payouts Service
+     
 
 
   license:
