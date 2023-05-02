@@ -194,7 +194,7 @@ info:
     * Pay 
     * Revovke
 
-    ## Recurring Payments API Workflow:
+    ## Recurring Payments API Workflow
     
       * Create a vendor list page that includes vendors supported by Pockyt.
       * Call the consult API to retrieve an authorization URL that redirects the customer to a vendor`s interface to authorize the merchant for future payments.
