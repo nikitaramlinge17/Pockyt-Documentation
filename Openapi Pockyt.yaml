@@ -1277,7 +1277,7 @@ paths:
                                 example: Error 
   /transaction object:
       post:
-        summary: transactionobject
+        summary: Transaction Object
         description: Write description
         operationId: transactionobject
         deprecated: false
