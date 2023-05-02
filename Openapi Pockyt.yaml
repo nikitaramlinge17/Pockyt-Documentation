@@ -162,9 +162,12 @@ info:
     In the instance where a customer requests a refund, the following request and response objects are initiated to complete the refund workflow.
 
     ## Refund API Workflow
-      * The customer will apply for a refund on the merchant`s website using the transaction number.
-      * The merchant`s system will use the transaction number to identify the exact details of the original purchase and call refund API which will request the digital wallet server to refund the payment originally made by the customer.
-      * The wallet server will reimburse the transaction amount to the customer as well as alert the latter about the refund via a notification.
+
+    The following steps depicts Refund API workflow:
+
+      1 The customer will apply for a refund on the merchant`s website using the transaction number.
+      2 The merchant`s system will use the transaction number to identify the exact details of the original purchase and call refund API which will request the digital wallet server to refund the payment originally made by the customer.
+      3 The wallet server will reimburse the transaction amount to the customer as well as alert the latter about the refund via a notification.
        
       ![Refund API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image4.png) 
 
@@ -172,12 +175,15 @@ info:
       In the event of a customer canceling the purchase the following request and response objects are created to complete the cancellation process successfully.
     
     ## Cancel API Workflow 
-      * The customer applies for payment on the merchant's website after shopping.
-      * If the customer is unable to confirm payment due to connectivity issues, they can select the **cancel** option in the payment UI.
-      * The merchant's system calls Pockyt's /cancel API to cancel the payment transaction.
-      * Pockyt notifies the digital wallet server to abandon the transaction.
-      * The digital wallet server cancels the transaction and notifies Pockyt of the cancellation status.
-      * Pockyt relays the information to the merchant's system.
+
+    The following steps depicts Cancel API workflow:
+
+      1 The customer applies for payment on the merchant's website after shopping.
+      2 If the customer is unable to confirm payment due to connectivity issues, they can select the **cancel** option in the payment UI.
+      3 The merchant's system calls Pockyt's /cancel API to cancel the payment transaction.
+      4 Pockyt notifies the digital wallet server to abandon the transaction.
+      5 The digital wallet server cancels the transaction and notifies Pockyt of the cancellation status.
+      6 Pockyt relays the information to the merchant's system.
 
       ![Cancel API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image5.png)
     
@@ -195,16 +201,17 @@ info:
     * Revovke
 
     ## Recurring Payments API Workflow
+    The following steps depicts Recurring Payments API workflow:
     
-      * Create a vendor list page that includes vendors supported by Pockyt.
-      * Call the consult API to retrieve an authorization URL that redirects the customer to a vendor`s interface to authorize the merchant for future payments.
-      * Based on the terminal value, Pockyt will provide either a normalURL or applinkURL and generate an autoDebitNo. unique to the Pockyt system.
-      * The customer will authorize the merchant to deduct payments from their wallet via the vendor's interface.
-      * The vendor will redirect the customer back to a redirection URL (autoRedirectURL) provided by the merchant in the request body of the consult API along with passing the authorization result to it.
-      * Call the apply-token API using the autoDebitNo. in the request parameter to get the token from the vendor.
-      * Use the pay API, following a fixed schedule, to initiate an auto-debit payment for any purchase made and process the payment results based on the transaction status returned by Pockyt.
-      * Use the revoke API to cancel the authorization agreement if the customer requests it.
-      * Once Pockyt receives the revoke request, the access token will become invalid, and the merchant system will be unable to access the user resource scope.
+      1 Create a vendor list page that includes vendors supported by Pockyt.
+      2 Call the consult API to retrieve an authorization URL that redirects the customer to a vendor`s interface to authorize the merchant for future payments.
+      3 Based on the terminal value, Pockyt will provide either a normalURL or applinkURL and generate an autoDebitNo. unique to the Pockyt system.
+      4 The customer will authorize the merchant to deduct payments from their wallet via the vendor's interface.
+      5 The vendor will redirect the customer back to a redirection URL (autoRedirectURL) provided by the merchant in the request body of the consult API along with passing the authorization result to it.
+      6 Call the apply-token API using the autoDebitNo. in the request parameter to get the token from the vendor.
+      7 Use the pay API, following a fixed schedule, to initiate an auto-debit payment for any purchase made and process the payment results based on the transaction status returned by Pockyt.
+      8 Use the revoke API to cancel the authorization agreement if the customer requests it.
+      9 Once Pockyt receives the revoke request, the access token will become invalid, and the merchant system will be unable to access the user resource scope.
 
     # Apendix B: Tutorial: Calculate VeriSign Value
 
