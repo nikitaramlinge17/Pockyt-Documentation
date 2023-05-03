@@ -350,7 +350,7 @@ components:
         verifySign:
           type: string
         amount: 
-          type: string 
+          type: integer 
         currency:
           type: string
         settleCurrency:
@@ -376,13 +376,13 @@ components:
         verifySign:
           type: string
         refundAmount:
-          type: string
+          type: integer
         currency: 
           type: string
         settleCurrency:
           type: string
         transactionNo:
-          type: string
+          type: integer
         refundReference: 
           type: string
     cancel:
