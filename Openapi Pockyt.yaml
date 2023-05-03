@@ -327,6 +327,139 @@ components:
           type: string
         goodsInfo:
           type: object
+    process:
+      properties: 
+        paymentMethodNonce:
+          type: string
+        merchantNo:
+          type: integer
+        paymentMethod: 
+          type: integer
+        storeNo: 
+          type: integer
+        transactionNo:
+          type: string
+        verifySign: 
+           type: string
+    pre-pay:
+      properties:
+        merchantNo:
+          type: integer 
+        StoreNo:
+          type: integer
+        verifySign:
+          type: string
+        amount: 
+          type: string 
+        currency:
+          type: string
+        settleCurrency:
+           type: string
+        ipnUrl:
+           type: string
+        reference:
+            type: string
+        description:
+           type: 
+        vendor:
+          type: string
+        terminal:
+          type: string
+        openid:
+          type: string
+    refund:
+      properties:
+        merchantNo:
+          type: integer
+        storeNo: 
+          type: integer
+        verifySign:
+          type: string
+        refundAmount:
+          type: string
+        currency: 
+          type: string
+        settleCurrency:
+          type: string
+        transactionNo:
+          type: string
+        refundReference: 
+          type: string
+    cancel:
+      properties: 
+        merchantNo: 
+          type: integer
+        storeNo:
+          type: integer
+        verifySign:
+          type: string
+        transactionNo:
+           type: integer
+    consult:
+      properties: 
+        merchantNo:
+          type: integer
+        storeNo: 
+          type: integer
+        verifySign:
+           type: string
+        vendore:
+           type: string
+        autoipnUrl: 
+          type: string
+        autpRedirectUrl:
+          type: string
+        autoReference:
+           type: string
+        terminal: 
+           type: string
+        osType: 
+           type: string
+        osVersion:
+           type: string
+    apply-token:
+      properties: 
+        merchantNo:
+          type: integer
+        storeNo:
+          type: integer
+        verifySign:
+           type: string
+        autoDebitNo:
+          type: string
+        grantType: 
+          type: string
+    pay:
+      properties: 
+        merchantNo:
+          type: integer
+        storeNo:
+           type: integer
+        verifySign:
+           type: string
+        autoDebitNo:
+           type: string
+        amount:
+           type: integer
+        currency:
+           type: string
+        settleCurrency:
+           type: string
+        reference: 
+           type: string
+        ipnUrl:
+           type: string
+    revoke:
+      properties: 
+        merchantNo:
+          type: integer
+        storeNo:
+          type: integer
+        verifySign:
+          type: string
+        autoDebitNo: 
+          type: integer
+    
   securitySchemes:
     api_keys:
       description: |
@@ -339,7 +472,7 @@ components:
         Generate your JWT when you log in.
       type: http
       scheme: bearer
-      bearerFormat: JWT    
+      bearerFormat: JWT   
 paths:  
   /secure-pay:  
     post:
@@ -549,7 +682,7 @@ paths:
         content: 
           application/json:
             schema: 
-              $ref: "#/components/schemas/secure-pay"
+              $ref: "#/components/schemas/process"
       responses:    
         200: # Response                   
           description: Returns a 200 status to indicate.....
@@ -686,7 +819,7 @@ paths:
         content: 
           application/json:
             schema: 
-              $ref: "#/components/schemas/secure-pay"
+              $ref: "#/components/schemas/pre-pay"
       responses:    
         200: # Response                   
           description: Returns a 200 status to indicate.....
@@ -793,7 +926,7 @@ paths:
         content: 
           application/json:
             schema: 
-              $ref: "#/components/schemas/secure-pay"  
+              $ref: "#/components/schemas/refund"  
       responses:    
         200: # Response                   
           description: Returns a 200 status to indicate.....
@@ -876,7 +1009,7 @@ paths:
          content: 
            application/json:
              schema: 
-               $ref: "#/components/schemas/secure-pay" 
+               $ref: "#/components/schemas/cancel" 
                responses:    
                200: # Response                   
                  description: Returns a 200 status to indicate.....
@@ -995,7 +1128,7 @@ paths:
          content: 
             application/json:
               schema: 
-                $ref: "#/components/schemas/secure-pay" 
+                $ref: "#/components/schemas/consult" 
                 responses:    
                 200: # Response                   
                 description: Returns a 200 status to indicate.....
@@ -1078,7 +1211,7 @@ paths:
             content: 
                 application/json:
                    schema: 
-                      $ref: "#/components/schemas/secure-pay" 
+                      $ref: "#/components/schemas/apply-token" 
                       responses:    
                       200: # Response                   
                       description: Returns a 200 status to indicate.....
@@ -1185,7 +1318,7 @@ paths:
          content: 
            application/json:
              schema: 
-               $ref: "#/components/schemas/secure-pay" 
+               $ref: "#/components/schemas/pay" 
                responses:    
                200: # Response                   
                  description: Returns a 200 status to indicate.....
@@ -1262,7 +1395,7 @@ paths:
             content: 
                     application/json:
                       schema: 
-                        $ref: "#/components/schemas/secure-pay" 
+                        $ref: "#/components/schemas/revoke" 
                         responses:    
                         200: # Response                   
                           description: Returns a 200 status to indicate.....
