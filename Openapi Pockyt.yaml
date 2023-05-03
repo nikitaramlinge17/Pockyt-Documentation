@@ -334,7 +334,7 @@ components:
         merchantNo:
           type: integer
         paymentMethod: 
-          type: integer
+          type: string
         storeNo: 
           type: integer
         transactionNo:
