@@ -4,7 +4,7 @@ post:
   operationId: secure-pay 
   deprecated: false
   tags: 
-    -  API References
+    -  Online Digital Wallet Payment Processing API`s
   parameters:        
     - name: customerNo
       in: header
