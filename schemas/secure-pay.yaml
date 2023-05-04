@@ -1,0 +1,33 @@
+properties: 
+  merchantNo:
+    type: integer
+  storeNo:
+    type: integer
+  verifySign:
+    type: string
+  amount:
+    type: integer
+  currency:
+    type: string
+  settleCurrency:
+    type: string
+  vendor:
+    type: string
+  terminal:
+    type: string
+  timeout:
+    type: integer
+  reference:
+    type: string
+  ipnURL:
+    type: string
+  callbackUrl:
+    type: string
+  description:
+    type: string
+  note:
+    type: string
+  osType:
+    type: string
+  goodsInfo:
+    type: object

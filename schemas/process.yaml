@@ -1,0 +1,17 @@
+properties: 
+  paymentMethodNonce:
+    type: string
+  merchantNo:
+    type: string
+  paymentMethod:
+    type: string
+  storeNo:
+    type: string
+  currency:
+    type: string
+  settleCurrency:
+    type: string
+  transactionNo:
+    type: string
+  verifySign:
+    type: string
