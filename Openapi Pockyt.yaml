@@ -25,23 +25,23 @@ servers:
 components:
   schemas: 
     secure-pay:
-      $ref: schemas\secure-pay.yaml
+      $ref: ./schemas/secure-pay.yaml
     process:
-      $ref: schemas\process.yaml
+      $ref: ./schemas/process.yaml
     pre-pay: 
-      $ref: schemas\pre-pay.yaml
+      $ref: ./schemas/pre-pay.yaml
     refund:
-      $ref: schemas\refund.yaml
+      $ref: ./schemas/refund.yaml
     cancel:
-      $ref: schemas\cancel.yaml
+      $ref: ./schemas/cancel.yaml
     consult:
-      $ref: schemas\consult.yaml
+      $ref: ./schemas/consult.yaml
     apply-token:
-      $ref: schemas\apply-token.yaml
+      $ref: ./schemas/apply-token.yaml
     pay:
-     $ref: schemas\pay.yaml
+     $ref: ./schemas/pay.yaml
     revoke:
-      $ref: schemas\revoke.yaml
+      $ref: ./schemas/revoke.yaml
     
   securitySchemes:
     api_keys:
@@ -58,25 +58,25 @@ components:
       bearerFormat: JWT   
 paths:  
   /secure-pay:  
-     $ref: paths\secure-pay.yaml
+     $ref: ./paths/secure-pay.yaml
   /process:
-    $ref: paths\process.yaml
+    $ref: ./paths/process.yaml
   /prepay:
-    $ref: paths\prepay.yaml
+    $ref: ./paths/prepay.yaml
   /refund:
-    $ref: paths\refund.yaml
+    $ref: ./paths/refund.yaml
   /cancel:
-    $ref: paths\cancel.yaml
+    $ref: ./paths/cancel.yaml
   /consult:
-    $ref: paths\consult.yaml
+    $ref: ./paths/consult.yaml
   /apply-token:
-    $ref: paths\apply-token.yaml
+    $ref: ./paths/apply-token.yaml
   /pay:
-    $ref: paths\pay.yaml
+    $ref: ./paths/pay.yaml
   /revovke:
-    $ref: paths\revoke.yaml
+    $ref: ./paths/revoke.yaml
   /transaction object:
-    $ref: paths\transaction object.yaml
+    $ref: ./paths/transaction object.yaml
 
   
    
