@@ -1,0 +1,22 @@
+post:
+  summary: Payment process
+  description: Pockyt Integrated Payments offers a highly customizable payment form for businesses that want to retain complete control over the payment process.
+  operationId: process 
+  deprecated: false
+  tags: 
+    -  API References 
+  parameters:
+    - name: customerNo
+      in: header
+      description: The user's ID in Pockyt System; include this parameter if you wish to map a customer with the payment and request a secure checkout.
+      required: false
+      schema: 
+        type: string
+  security: 
+    - api_keys: []
+      jwt: []
+  requestBody: 
+    content:
+      application/json:
+        schema:
+          $ref: ../schemas/process.yaml
