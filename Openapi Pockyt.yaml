@@ -25,23 +25,23 @@ servers:
 components:
   schemas: 
     secure-pay:
-      $ref: schemas/secure-pay.yaml
+      $ref: ./schemas/secure-pay.yaml
     process:
-      $ref: schemas/process.yaml
+      $ref: ./schemas/process.yaml
     pre-pay: 
-      $ref: schemas/pre-pay.yaml
+      $ref: ./schemas/pre-pay.yaml
     refund:
-      $ref: schemas/refund.yaml
+      $ref: ./schemas/refund.yaml
     cancel:
-      $ref: schemas/cancel.yaml
+      $ref: ./schemas/cancel.yaml
     consult:
-      $ref: schemas/consult.yaml
+      $ref: ./schemas/consult.yaml
     apply-token:
       $ref: ./schemas/apply-token.yaml
     pay:
-     $ref: schemas/pay.yaml
+     $ref: ./schemas/pay.yaml
     revoke:
-      $ref: schemas/revoke.yaml
+      $ref: ./schemas/revoke.yaml
     
   securitySchemes:
     api_keys:
