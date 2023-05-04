@@ -1,0 +1,21 @@
+properties: 
+    merchantNo:
+      type: integer
+    storeNo: 
+      type: integer
+    verifySign:
+       type: string
+    vendore:
+       type: string
+    autoipnUrl: 
+      type: string
+    autpRedirectUrl:
+      type: string
+    autoReference:
+       type: string
+    terminal: 
+       type: string
+    osType: 
+       type: string
+    osVersion:
+       type: string

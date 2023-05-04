@@ -1,0 +1,11 @@
+properties: 
+    merchantNo:
+      type: integer
+    storeNo:
+      type: integer
+    verifySign:
+       type: string
+    autoDebitNo:
+      type: string
+    grantType: 
+      type: string

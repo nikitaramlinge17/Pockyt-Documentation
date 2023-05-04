@@ -1,0 +1,25 @@
+properties:
+    merchantNo:
+      type: integer 
+    StoreNo:
+      type: integer
+    verifySign:
+      type: string
+    amount: 
+      type: integer 
+    currency:
+      type: string
+    settleCurrency:
+       type: string
+    ipnUrl:
+       type: string
+    reference:
+        type: string
+    description:
+       type: 
+    vendor:
+      type: string
+    terminal:
+      type: string
+    openid:
+      type: string
