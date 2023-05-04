@@ -43,7 +43,7 @@ post:
         content: 
             application/json:
                schema: 
-                 $ref: ..\schemas\apply-token.yaml
+                 $ref: ../schemas/apply-token.yaml
      responses:    
         200: # Response                   
           description: Returns a 200 status to indicate.....

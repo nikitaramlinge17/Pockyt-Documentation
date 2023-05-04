@@ -97,7 +97,7 @@ post:
     content: 
       application/json:
         schema: 
-         $ref: ..\schemas\pre-pay.yaml
+         $ref: ../schemas/pre-pay.yaml
   responses:    
     200: # Response                   
       description: Returns a 200 status to indicate.....

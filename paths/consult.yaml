@@ -79,7 +79,7 @@ post:
      content: 
         application/json:
           schema: 
-            $ref: ..\schemas\consult.yaml
+            $ref: ../schemas/consult.yaml
   responses:    
     200: # Response                   
       description: Returns a 200 status to indicate.....

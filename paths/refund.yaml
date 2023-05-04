@@ -67,7 +67,7 @@ post:
     content: 
       application/json:
         schema: 
-          $ref: ..\schemas\refund.yaml  
+          $ref: ../schemas/refund.yaml  
   responses:    
     200: # Response                   
       description: Returns a 200 status to indicate.....
