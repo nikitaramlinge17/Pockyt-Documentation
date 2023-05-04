@@ -42,7 +42,6 @@ components:
      $ref: ./schemas/pay.yaml
     revoke:
       $ref: ./schemas/revoke.yaml
-    
   securitySchemes:
     api_keys:
       description: |
