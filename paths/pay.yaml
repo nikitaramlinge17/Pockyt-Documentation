@@ -67,7 +67,7 @@ post:
      content: 
        application/json:
          schema: 
-           $ref: ../schemas\pay.yaml
+           $ref: ../schemas/pay.yaml
   responses:    
     200: # Response                   
        description: Returns a 200 status to indicate.....
