@@ -1,0 +1,106 @@
+post:
+  summary: Refund
+  description: Enables merchant systems to refund  payments in ease of use.
+  operationId: refund
+  deprecated: false
+  tags: 
+    - Online Digital Wallet Payment Processing API`s
+  parameters:
+      - name: merchantNo
+        in: header
+        description:  The merchant's ID.
+        required: true
+        schema: 
+           type: string     
+      - name: storeNo
+        in: header
+        description:  The store's ID. 
+        required: true
+        schema: 
+          type: string  
+      - name: refundAmount
+        in: header
+        description:  The amount that needs to be refunded.
+        required: true
+        schema: 
+          type: string 
+      - name: currency
+        in: header
+        description: The supported settlement currency "USD".
+        required: true
+        schema: 
+          type: number
+      - name: settleCuurency
+        in: header
+        description: The supported settlement currency "USD".
+        required: true
+        schema: 
+          type: number
+      - name: transactionNo
+        in: header
+        description:  Transaction number of orginal sale.
+        required: true
+        schema: 
+          type: string
+      - name: reference
+        in: header
+        description:  reference number of original sale.
+        required: true
+        schema: 
+          type: string
+      - name: refundReference 
+        in: header
+        description: (Optional) ID of reference transaction in Point-of-sale.
+        required: false
+        schema: 
+          type: string
+      - name: verifySign
+        in: header
+        description:  The parameter signature.
+        required: true
+        schema: 
+          type: string
+  security: 
+            - api_keys: []
+              jwt: []
+  requestBody: 
+    content: 
+      application/json:
+        schema: 
+          $ref: ../schemas/refund.yaml  
+  responses:    
+    200: # Response                   
+      description: Returns a 200 status to indicate.....
+      content: # Response Body
+        application/json: # Media Type
+          schema: 
+            type: object # Data Type
+            properties: 
+              id:
+                type: integer
+              message: 
+                type: string
+              result:
+                type: object
+            example: # Sample Data 
+    201:
+      description: Returns a 201 status to indicate.....
+      content: 
+        text/plain:
+          schema: 
+            type: string 
+            example: Error 
+    403:
+     description: Returns a 403 status to indicate.....
+     content: 
+        text/plain:
+          schema: 
+            type: string 
+            example: Error
+    401:
+      description: Returns a 401 status to indicate.....
+      content: 
+        text/plain:
+          schema: 
+            type: string 
+            example: Error    
