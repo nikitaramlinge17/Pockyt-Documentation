@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: Pockyt Online Payments API's
   version: 0.1.0
-  description: |-
+  description: 
     $ref: introduction/_introduction.md
   license:
     name: Pockyt
@@ -25,7 +25,7 @@ servers:
 components:
   schemas: 
     secure-pay:
-      $ref: ./schemas/secure-pay.yaml
+      $ref:  ./schemas/secure-pay.yaml
     process:
       $ref: ./schemas/process.yaml
     pre-pay: 
