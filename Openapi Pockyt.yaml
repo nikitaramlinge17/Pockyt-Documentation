@@ -16,8 +16,6 @@ info:
 tags:
   - name: Online Digital Wallet Payment Processing API`s
     description: List of API`s  
-  - name: Payouts Payment API`s 
-    description: List of API's in Payout Payment
 
 servers: 
   - url:  https://mapi.yuansfer.com
