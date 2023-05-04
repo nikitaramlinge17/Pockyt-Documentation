@@ -36,7 +36,7 @@
    
 ## Prerequisites 
       
-    Please ensure you have the following accounts and test devices available to complete your implementation project.	
+  Please ensure you have the following accounts and test devices available to complete your implementation project.	
 
 * Account ID's in the Apple iOS store, and Google Play store, with the iOS TestFlight application installed on your phone.
 * An iOS device and an Android device on which you will download and install the test digital wallet applications from PayPal, AliPay and CashApp to generate payment barcode strings
