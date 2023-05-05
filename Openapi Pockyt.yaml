@@ -81,7 +81,7 @@ paths:
   /transaction object:
     $ref: ./paths/transaction object.yaml
   /register:
-    $ref: paths/register.yaml
+    $ref: ./paths/register.yaml
 
   
    
