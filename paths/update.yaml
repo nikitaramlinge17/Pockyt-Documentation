@@ -1,0 +1,35 @@
+properties: 
+  city:
+    type: integer
+  country:
+    type: integer
+  countryCode:
+    type: string
+  dateofBirth:
+    type: integer
+  firstName:
+    type: string
+  lastName:
+    type: string
+  merchantNo:
+    type: string
+  phone:
+    type: string
+  profileType:
+    type: integer
+  state:
+    type: string
+  storNo:
+    type: string
+  street:
+    type: string
+  street2:
+    type: string
+  timestamp:
+    type: string
+  customerNo: 
+    type: string
+  verifySign:
+    type: string
+  zip:
+    type: string
