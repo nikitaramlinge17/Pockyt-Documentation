@@ -15,7 +15,9 @@ info:
 
 tags:
   - name: Online Digital Wallet Payment Processing API`s
-    description: List of API`s  
+    description: List of API`s 
+  - name : Payouts Payment API`s	 
+    description: List of API's
 
 servers: 
   - url:  https://mapi.yuansfer.com
@@ -42,6 +44,8 @@ components:
      $ref: ./schemas/pay.yaml
     revoke:
       $ref: ./schemas/revoke.yaml
+    register:
+      $ref: schemas/register.yaml
   securitySchemes:
     api_keys:
       description: |
@@ -76,6 +80,8 @@ paths:
     $ref: ./paths/revoke.yaml
   /transaction object:
     $ref: ./paths/transaction object.yaml
+  /register:
+    $ref: paths/register.yaml
 
   
    
