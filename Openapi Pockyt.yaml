@@ -16,7 +16,7 @@ info:
 tags:
   - name: Online Digital Wallet Payment Processing API`s
     description: List of API`s 
-  - name : Payouts Service APIs.	 
+  - name : Payouts Service APIs 
     description: List of API's
 
 servers: 
@@ -48,6 +48,8 @@ components:
       $ref: ./schemas/register.yaml
     retrieve:
       $ref: ./schemas/retrieve.yaml
+    update:
+      $ref: ./schemas/update.yaml
   securitySchemes:
     api_keys:
       description: |
@@ -86,6 +88,8 @@ paths:
     $ref: ./paths/register.yaml
   /retrieve:
     $ref: ./paths/retrieve.yaml
+  /update:
+    $ref: paths/update.yaml
 
   
    
