@@ -4,7 +4,7 @@ post:
   operationId: register 
   deprecated: false
   tags: 
-    -  Payouts Payment API`s
+    -  Payouts Service APIs.
   parameters:        
     - name: merchantNo
       in: header
