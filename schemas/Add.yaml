@@ -1,0 +1,32 @@
+properties: 
+  accountCountry:
+    type: integer
+  accountCurrency:
+    type: integer
+  accountTag:
+    type: string
+  bankAccountId:
+    type: integer
+  branchId:
+    type: string
+  accountType:
+    type: string
+  bankAccountPurpose:
+    type: string
+  customerNo:
+    type: integer
+  ipnUrl:
+    type: string
+  merchantNo:
+    type: string
+  storNo:
+    type: string
+  timestamp:
+    type: string
+  street2:
+    type: string
+  clientlp:
+    type: string
+  verifySign: 
+    type: string
+  
