@@ -45,7 +45,7 @@ components:
     revoke:
       $ref: ./schemas/revoke.yaml
     register:
-      $ref: schemas/register.yaml
+      $ref: ./schemas/register.yaml
   securitySchemes:
     api_keys:
       description: |
