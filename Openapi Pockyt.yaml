@@ -52,6 +52,8 @@ components:
       $ref: ./schemas/update.yaml
     Add:
       $ref: ./schemas/Add.yaml
+    trans-query:
+      $ref: ./schemas/trans-query.yaml
   securitySchemes:
     api_keys:
       description: |
@@ -94,6 +96,8 @@ paths:
     $ref: ./paths/update.yaml
   /Add:
     $ref: ./paths/Add.yaml
+  /trans-query:
+    $ref: ./paths/trans-query.yaml
 
   
    
