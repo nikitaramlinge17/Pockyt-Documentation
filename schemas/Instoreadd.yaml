@@ -1,0 +1,16 @@
+properties: 
+  merchantNo:
+    type: integer
+  storeNo:
+     type: integer
+  verifySign:
+     type: string
+  amount:
+     type: integer
+  currency:
+     type: string
+  settleCurrency:
+     type: string
+  reference: 
+     type: string
+  
