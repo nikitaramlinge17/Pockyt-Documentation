@@ -56,8 +56,8 @@ components:
       $ref: ./schemas/Add.yaml
     trans-query:
       $ref: ./schemas/trans-query.yaml
-    add:
-      $ref: ././schemas/In-store payments APIs/add.yaml
+    Instoreadd:
+      $ref: ./schemas/Instoreadd.yaml
   securitySchemes:
     api_keys:
       description: |
@@ -102,8 +102,8 @@ paths:
     $ref: ./paths/Add.yaml
   /trans-query:
     $ref: ./paths/trans-query.yaml
-  /add:
-    $ref: ././paths/In-store payments APIs/add.yaml
+  /Instoreadd:
+    $ref: ./paths/Instoreadd.yaml
 
   
    
