@@ -4,7 +4,7 @@ post:
   operationId: /prepay
   deprecated: false
   tags: 
-    - In-Store Digital Wallet Payment Processing Sandbox API`s.
+    - In-Store Digital Wallet Payment Processing Sandbox API`s
   parameters:
     - name: merchantNo
       in: header
