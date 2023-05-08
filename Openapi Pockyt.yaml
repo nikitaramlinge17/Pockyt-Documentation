@@ -58,6 +58,8 @@ components:
       $ref: ./schemas/trans-query.yaml
     Instoreadd:
       $ref: ./schemas/Instoreadd.yaml
+    Instoreprepay:
+      $ref: ./schemas/Instoreprepay.yaml
   securitySchemes:
     api_keys:
       description: |
@@ -104,6 +106,8 @@ paths:
     $ref: ./paths/trans-query.yaml
   /Instoreadd:
     $ref: ./paths/Instoreadd.yaml
+  /Instoreprepay:
+    $ref: ./paths/Instoreprepay.yaml
 
   
    
