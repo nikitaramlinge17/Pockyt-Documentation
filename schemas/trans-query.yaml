@@ -1,0 +1,10 @@
+properties: 
+  merhcantNo:
+    type: integer
+  storeNo:
+    type: integer
+  transactionNo:
+    type: integer
+  verifySign: 
+    type: integer
+  
