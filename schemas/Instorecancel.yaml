@@ -1,0 +1,7 @@
+properties: 
+  result:
+    type: object
+  ret_msg:
+     type: string
+  ret_code:
+     type: string
