@@ -1,0 +1,118 @@
+post:
+  summary: Create-trans-qrcode
+  description: Generates a QR code and transaction number for the customer to scan via their digital wallet app, enabling them to initiate the payment process. 
+  operationId: /create-trans-qrcode
+  deprecated: false
+  tags: 
+    - In-Store Digital Wallet Payment Processing Sandbox API`s
+  parameters:
+    - name: merchantNo
+      in: header
+      description:  The merchant's ID.
+      required: true
+      schema: 
+        type: string
+    - name: storeNo
+      in: header
+      description: The store's ID.
+      required: true
+      schema: 
+        type: string  
+    - name: storeAdminNo
+      in: header
+      description: The store admin ID.
+      required: true
+      schema: 
+        type: string
+    - name: amount
+      in: header
+      description: The amount of transaction.
+      required: true
+      schema: 
+        type: string
+    - name: currency
+      in: header
+      description: The supported settlement currency "USD".
+      required: true
+      schema:
+        type: string
+    - name: settleCurrency
+      in: header
+      description: The supported settlement currency "USD".
+      required: true
+      schema: 
+        type: string
+    - name: vendor
+      in: header
+      description: Digital wallet service.
+      required: false
+      schema:
+        type: string
+    - name: reference
+      in: header
+      description: The invoice number of the transaction stored in the merchant's system.
+      required: true
+      schema: 
+        type: string
+    - name: ipnUrl
+      in: header
+      description:  Instant Payment Notification Handler URL - must be secured.
+      required: true
+      schema: 
+        type: string
+    - name: needQrcode
+      in: header
+      description: Possible values true or false. Default = false. If true, Pockyt will return a QR code image.
+      required: true
+      schema: 
+        type: string
+    - name: timeout
+      in: header
+      description: The timeout value in minutes - default=120.
+      required: true
+      schema: 
+        type: string
+  security: 
+         - api_keys: []
+           jwt: []
+  requestBody: 
+      content: 
+        application/json:
+         schema: 
+           $ref: ../schemas/Instoreprepay.yaml
+  responses:
+    200: # Response                   
+      description: Returns a 200 status to indicate.....
+      content: # Response Body
+        application/json: # Media Type
+          schema: 
+            type: object # Data Type
+            properties: 
+              id:
+                type: integer
+              message: 
+                type: string
+              result:
+                type: object
+            example: # Sample Data
+    201:
+        description: Returns a 201 status to indicate.....
+        content: 
+          text/plain:
+           schema: 
+             type: string 
+             example: Error   
+    403:
+        description: Returns a 403 status to indicate.....
+        content: 
+          text/plain:
+            schema: 
+             type: string 
+             example: Error
+    401:
+        description: Returns a 401 status to indicate.....
+        content: 
+          text/plain:
+            schema: 
+              type: string 
+              example: Error
