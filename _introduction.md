@@ -180,11 +180,11 @@ Perform the following steps to use Pockyt Checkout for online payment checkout.
   Pockyt Integrated Payments: Prepay API Workflow Diagram
   ![Prepay API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image3.png)
 
-# Customer Refunds
+### Customer Refunds
 
     In the instance where a customer requests a refund, the following request and response objects are initiated to complete the refund workflow.
 
-## Refund API Workflow
+### Refund API Workflow
 
     The following steps depicts Refund API workflow:
 
@@ -199,7 +199,7 @@ Perform the following steps to use Pockyt Checkout for online payment checkout.
     # Cancel the transaction / void
       In the event of a customer canceling the purchase the following request and response objects are created to complete the cancellation process successfully.
 
-## Cancel API Workflow
+### Cancel API Workflow
 
     The following steps depicts Cancel API workflow:
 
@@ -217,7 +217,7 @@ Perform the following steps to use Pockyt Checkout for online payment checkout.
 
     ![Cancel API](https://raw.githubusercontent.com/nikitaramlinge17/Pockyt-Documentation/main/assets/image5.png)
 
-# Recurring Payments (Auto Debit)
+### Recurring Payments (Auto Debit)
 
     Recurring Payments is known as auto-debit, it is a payment solution recommended by Pockyt that facilitates users with automated payments in the future.
 
@@ -252,7 +252,7 @@ Perform the following steps to use Pockyt Checkout for online payment checkout.
 
     9 - Once Pockyt receives the revoke request, the access token will become invalid, and the merchant system will be unable to access the user resource scope.
 
-# Apendix B: Tutorial: Calculate VeriSign Value
+### Apendix B: Tutorial: Calculate VeriSign Value
 
     ## Secure API Calls with VeriSign Signature
     Transactions made via Pockyt do not involve any secret tokens or user passwords eliminating the chances of hacking or fraud incidents. Instead, we use the verifySign parameter to authenticate and authorize the API requests at every step of the transaction process.
@@ -306,11 +306,11 @@ Keep in mind that the IPN messages are not synchronous with the merchant`s websi
 
     It is recommended for the merchant system to validate the parameters in the callback information using verifySign. This is to eliminate the possibility of processing tampered information. Pockyt`s callback function will contain the following parameters along with the IPN.
 
-## B2C Payouts Service
+# B2C Payouts Service
 
 The B2C payouts Service Guide is designed to help developers to implement the Pockyt's Payout Service APIs.
 
-# About this document
+## About this document
 
 In this section, you will learn how to:
 
@@ -326,7 +326,7 @@ In this section, you will learn how to:
 * Sandbox URL:  "https://mapi.yuansfer.yunkeguan.com/app-data-search/v3/cancel"
 * Production URL: "https://mapi.yuansfer.com/app-data-search/v3/cancel"
 
-# Getting started with Pockyt Developement Sandbox
+## Getting started with Pockyt Developement Sandbox
 
 This section provides instructions for setting up a development account with Pockyt, obtaining
 sandbox credentials, and installing the test digital wallet applications.
@@ -359,7 +359,7 @@ Once your testing in the sandbox is complete, you will receive production creden
 "verifySign": "f38965887c5676e2fb19d951251eb613", //Calculated with Token Value
 }
 
-# Terminology and Basic Payout User Work Flow
+## Terminology and Basic Payout User Work Flow
 
 The basic payment scenario for Pockyt’s Payouts Payment API’s.
 
@@ -423,7 +423,7 @@ Follow the steps below to implement the VeriSign feature:
    prefix.
 4. Calculate the MD5 hash value of the Step 3 result.
 
-# Calculating the VeriSign Parameter Value
+## Calculating the VeriSign Parameter Value
 
 Consider the following Parameters
 
@@ -461,7 +461,7 @@ currency=USD&goodsInfo=
 erchantNo=200043&reference=seq_1525922323&storeNo=300014&terminal=ONLINE&timeo
 ut=120&vendor=alipay
 
-# Calculating the VeriSign Parameter Value
+## Calculating the VeriSign Parameter Value
 
 Calculate the MD5 value of your API token and append to the string with the '&' character.
 For example, if the API token is 5cbfb079f15b150122261c8537086d77a the MD5 hash
@@ -495,7 +495,7 @@ timeout = '120'
 "verifySign": "b6bfd66531ae7c9499115c7480a2c8aa",
 }' 'https://mapi.yuansfer.com/app-instore/v3/add'
 
-# Appendix C: Tutorial: Instant Payment Notifications
+## Appendix C: Tutorial: Instant Payment Notifications
 
 The Instant Payment Notification (IPNurl) is a callback function that helps Pockyt notify the merchant about any new transaction-related event. Pockyt waits for the merchant’s website to Acknowledge the IPN messages before proceeding.
 
@@ -528,7 +528,7 @@ It is recommended for the merchant system to validate the parameters in the call
 | note           | string | The payment note                                                                                                      |
 | verifySign     | string | The parameter signature                                                                                               |
 
-# Code Sample: Calling the /Trans-Query API
+## Code Sample: Calling the /Trans-Query API
 
 Example in Javascript
 
@@ -561,7 +561,7 @@ verifySign: MySignature,
 transactionNo: myPOSParamObject.transactionNo
 }
 
-# Code Sample: Calling the /Trans-Query API
+## Code Sample: Calling the /Trans-Query API
 
 Example in Javascript
 
@@ -589,7 +589,7 @@ return result;
 }, {});
 }
 
-# Code Sample: Calling the /Trans-Query API
+## Code Sample: Calling the /Trans-Query API
 
 Example in Javascript
 
@@ -607,11 +607,11 @@ body: MyPocketParamJason
 .then(data => console.log(data))
 .catch(error => console.error(error));
 
-## In-Store Digital Wallet Payment Processing Sandbox API’s
+# In-Store Digital Wallet Payment Processing Sandbox API’s
 
 The B2C payouts Service Guide is designed to help developers to implement In-Store Digital Wallet Payment Processing Sandbox API’s.
 
-# About this document
+About this document
 
 In this section, you will learn how to:
 
@@ -624,7 +624,7 @@ The tutorials and explanations in this document will refer to Pockyt's base Sand
 Sandbox APIs Base URL: https://mapi.yuansfer.yunkeguan.com
 Production APIs Base URL: https://mapi.yuansfer.com/
 
-# Prerequisites
+## Prerequisites
 
 The following system components, peripherals, and test devices are required for the implementation of your project:
 
@@ -633,7 +633,7 @@ The following system components, peripherals, and test devices are required for 
 * To generate payment barcode strings, you will need an iOS and an Android device to install and test digital wallet applications from PayPal, AliPay, and CashApp.
 * Depending on your network configuration, you may need to open ports in your firewall to allow r POST messagse frommPockyt to send messages to listener URLs on your back-end server.
 
-# Getting started with Pockyt Developement Sandbox
+## Getting started with Pockyt Developement Sandbox
 
 This section provides instructions for setting up a development account with Pockyt, obtaining
 sandbox credentials, and installing the test digital wallet applications.
@@ -676,7 +676,7 @@ To install Paypal and CashApp Follow these steps:
    associated with the mobile device.
 2. You will receive an email  from the iOS Appstore or the Google Play store with an invitation to install the sandbox applications.
 
-# Payment Scenarios and API Endpoints
+## Payment Scenarios and API Endpoints
 
 Pockyt's In-Store payment API supports two basic payment scenarios.
 
@@ -717,7 +717,7 @@ The **/trans-query** endpoint enables the retrieval of details of past transacti
 Sandbox URL: ""https://mapi.yuansfer.yunkeguan.com/app-data-search/v3/trans-query"
 Production URL: "https://mapi.yuansfer.com/app-data-search/v3/trans-query"
 
-# Customer Presented QR Code Payment Scenario
+## Customer Presented QR Code Payment Scenario
 
 In this type of In-Store payment, customers present a QR Code generated by their digital wallet app on their mobile device. The merchant then scans the code at the point-of-sale terminal to process the transaction.
 
@@ -741,7 +741,7 @@ Here are the steps of a merchant-presented QR Code payment transaction itinerary
 10. After a successful transaction, the POS system displays a 'success' message to the customer screen.
 11. POS systems generate a transaction receipt that contains all information about the transaction.
 
-# Merchant Presented QR Code
+## Merchant Presented QR Code
 
 Merchants generate QR codes either on their customer-facing displays or on paper receipts. Using their digital wallet, the customer scans this code to complete the payment.
 
@@ -762,7 +762,7 @@ Listed below are the steps of a QR Code payment made by a merchant
    See tutorial section attached on how to configure your IPN callback settings
 8. The Point-of-Sale generates a customer receipt marking the end of the transaction.
 
-# Customer Refunds
+## Customer Refunds
 
 For a refund request, the following request and response objects are initiated.
 
@@ -772,7 +772,7 @@ For a refund request, the following request and response objects are initiated.
   POST: https://mapi.yuansfer.com/app-data-search/v3/refund
 * The wallet server will reimburse the transaction amount to the customer as well as alert the latter about the refund via a notification.
 
-# Cancel the transaction / Void
+## Cancel the transaction / Void
 
 The API allows merchants to cancel a payment transaction in either scenario if the transaction is abandoned before submission, enabling them to manage their transactions efficiently.
 
@@ -785,7 +785,7 @@ The API allows merchants to cancel a payment transaction in either scenario if t
   cancellation status.
 * Pockyt will then relay the information to the Point-of-Sale.
 
-# Apendix B: Tutorial: Calculate VeriSign Value
+## Apendix B: Tutorial: Calculate VeriSign Value
 
 Pockyt transactions don't require secret tokens or passwords, so there's no risk of hacking or fraud. Instead, we use the verifySign parameter to authenticate and authorize API requests at every step of the transaction process.
 
@@ -806,7 +806,7 @@ The verifySign parameter serves as your API parameter signature. You can build t
    prefix.
 4. Calculate the MD5 hash value of the Step 3 result.
 
-# Calculating the VeriSign Parameter Value
+## Calculating the VeriSign Parameter Value
 
 Consider the following Parameters
 
@@ -850,7 +850,7 @@ erchantNo=200043&reference=seq_1525922323&storeNo=300014&terminal=ONLINE&timeo
 ut=120&vendor=alipay
 ```
 
-# Calculating the VeriSign Parameter Value
+## Calculating the VeriSign Parameter Value
 
 Calculate the MD5 value of your API token and append to the string with the '&' character.
 
@@ -885,7 +885,7 @@ timeout = '120'
 "verifySign": "b6bfd66531ae7c9499115c7480a2c8aa",
 }' 'https://mapi.yuansfer.com/app-instore/v3/add'
 
-# Appendix C: Tutorial: Instant Payment Notifications
+## Appendix C: Tutorial: Instant Payment Notifications
 
 The Instant Payment Notification (IPNurl) is a callback function that helps Pockyt notify the merchant about any new transaction-related event. Pockyt waits for the merchant’s website to Acknowledge the IPN messages before proceeding.
 
@@ -946,7 +946,7 @@ separate tutorial)
 * Append the MD5 hash value of your API token to the end of your parameters with the '&' prefix
 * Calculate the MD5 hash value of the Step 3 result.
 
-# Code Sample: Calling the /Add API
+## Code Sample: Calling the /Add API
 
 Example in Javascript
 
@@ -975,7 +975,7 @@ return result;
 }
 }
 
-# Code Sample: Calling the /Add API
+## Code Sample: Calling the /Add API
 
 Example in Javascript
 
@@ -1003,7 +1003,7 @@ Next, receive Transaction ID and call to /PrePay
   the digital wallet payment.
   POST https://mapi.yuansfer.com/app-instore/v3/prepay
 
-# Code Sample: Calling the /PrePay API
+## Code Sample: Calling the /PrePay API
 
 Example in Javascrip
 
@@ -1036,7 +1036,7 @@ paymentBarcode: myPOSParamObject.paymentBarcode,
 vendor: myPOSParamObject.vendor
 }
 
-# Code Sample: Calling the /PrePay API
+## Code Sample: Calling the /PrePay API
 
 Example in Javascript
 
@@ -1066,7 +1066,7 @@ return result;
 }
 }
 
-# Code Sample: Calling the /PrePay API
+## Code Sample: Calling the /PrePay API
 
 Example in Javascript
 
@@ -1084,7 +1084,7 @@ body: MyPocketParamJason
 .then(data => console.log(data))
 .catch(error => console.error(error));
 
-# Code Sample: Calling the /Trans-Query API
+## Code Sample: Calling the /Trans-Query API
 
 Example in Javascript
 
@@ -1117,7 +1117,7 @@ verifySign: MySignature,
 transactionNo: myPOSParamObject.transactionNo
 }
 
-# Code Sample: Calling the /Trans-Query API
+## Code Sample: Calling the /Trans-Query API
 
 Example in Javascript
 
@@ -1145,7 +1145,7 @@ return result;
 }, {});
 }
 
-# Code Sample: Calling the /Trans-Query API
+## Code Sample: Calling the /Trans-Query API
 
 Example in Javascript
 
@@ -1163,7 +1163,7 @@ body: MyPocketParamJason
 .then(data => console.log(data))
 .catch(error => console.error(error));
 
-# Code Sample: Calling the /Refund API
+## Code Sample: Calling the /Refund API
 
 Example in Javascript
 
@@ -1198,7 +1198,7 @@ settleCurrency: myPOSParamObject.settleCurrency,
 transactionNo: myPOSParamObject.transactionNo
 }
 
-# Code Sample: Calling the /Refund API
+## Code Sample: Calling the /Refund API
 
 Example in Javascript
 
@@ -1227,7 +1227,7 @@ return result;
 }
 }
 
-# Code Sample: Calling the /Refund API
+## Code Sample: Calling the /Refund API
 
 Example in Javascript
 
@@ -1245,7 +1245,7 @@ body: MyPocketParamJason
 .then(data => console.log(data))
 .catch(error => console.error(error));
 
-# Code Sample: Calling the /Cancel API
+## Code Sample: Calling the /Cancel API
 
 Example in Javascript
 
@@ -1274,7 +1274,7 @@ verifySign: MySignature,
 transactionNo: myPOSParamObject.transactionNo
 }
 
-# Code Sample: Calling the /Cancel API
+## Code Sample: Calling the /Cancel API
 
 Example in Javascript
 
@@ -1303,7 +1303,7 @@ return result;
 }
 }
 
-# Code Sample: Calling the /Cancel API
+## Code Sample: Calling the /Cancel API
 
 Example in Javascript
 
