@@ -607,7 +607,7 @@ body: MyPocketParamJason
 .then(data => console.log(data))
 .catch(error => console.error(error));
 
-# In-Store Digital Wallet Payment Processing Sandbox API’s
+# In-Store Digital Wallet
 
 The B2C payouts Service Guide is designed to help developers to implement In-Store Digital Wallet Payment Processing Sandbox API’s.
 
