@@ -1,0 +1,11 @@
+root: ./
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+redirects:
+  previous/page: new-folder/introduction.md
+plugins:
+  - plugin-name
+  - another-plugin-name:
+      option1: value1
+      option2: value2
