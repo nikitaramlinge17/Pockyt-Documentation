@@ -4,7 +4,7 @@ post:
   operationId: cancel
   deprecated: false
   tags: 
-    - Online Digital Wallet Payment Processing API`s  
+    - Online Digital Wallet Payment Processing APIs  
   parameters:
     - name: merchantNo
       in: header
