@@ -1,10 +1,10 @@
 post:
-  summary: Create-trans-qrcode
+  summary: /create-trans-qrcode
   description: Generates a QR code and transaction number for the customer to scan via their digital wallet app, enabling them to initiate the payment process. 
   operationId: /create-trans-qrcode
   deprecated: false
   tags: 
-    - In-Store Digital Wallet Payment Processing Sandbox API`s
+    - Pockyt In-store APIs 
   parameters:
     - name: merchantNo
       in: header
