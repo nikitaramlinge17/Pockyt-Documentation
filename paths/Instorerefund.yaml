@@ -1,10 +1,10 @@
 post:
-  summary: Refund
+  summary: /refund
   description: Enables merchant systems to refund  payments in ease of use.
   operationId: /refund
   deprecated: false
   tags: 
-    - Online Digital Wallet Payment Processing API`s
+    - In-Store Digital Wallet Payment Processing Sandbox APIs
   parameters:
       - name: merchantNo
         in: header

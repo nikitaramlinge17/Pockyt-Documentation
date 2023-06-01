@@ -4,7 +4,7 @@ post:
   operationId: /trans-query
   deprecated: false
   tags: 
-    - In-Store Digital Wallet Payment Processing Sandbox API`s
+    - In-Store Digital Wallet Payment Processing Sandbox APIs
   parameters:
     - name: merchantNo
       in: header

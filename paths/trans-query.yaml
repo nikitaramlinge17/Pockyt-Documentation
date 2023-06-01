@@ -4,7 +4,7 @@ post:
   operationId: Trans-query 
   deprecated: false
   tags: 
-    -  Payouts Service APIs
+    -  Universal APIs
   parameters:        
     - name: merchantNo
       in: header

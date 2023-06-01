@@ -4,7 +4,7 @@ post:
   operationId: secure-pay 
   deprecated: false
   tags: 
-    -  Online Digital Wallet Payment Processing API`s
+    -  Pockyt Hosted Checkout APIs
   parameters:        
     - name: customerNo
       in: header

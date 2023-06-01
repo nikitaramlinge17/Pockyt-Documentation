@@ -1,10 +1,10 @@
 post:
-  summary: Cancel
+  summary: cancel
   description: Enables customer to cancel the purchase. 
   operationId: cancel
   deprecated: false
   tags: 
-    - Online Digital Wallet Payment Processing API`s  
+    - Pockyt In-store APIs   
   parameters:
     - name: merchantNo
       in: header

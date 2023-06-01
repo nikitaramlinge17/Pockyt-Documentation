@@ -1,10 +1,10 @@
 post:
-  summary: Prepay
+  summary: /prepay
   description: Enables customers to make the final confirmation before submitting payment which will process through the digital wallet servers.
   operationId: /prepay
   deprecated: false
   tags: 
-    - In-Store Digital Wallet Payment Processing Sandbox API`s
+    - Pockyt In-store APIs 
   parameters:
     - name: merchantNo
       in: header

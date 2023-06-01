@@ -4,7 +4,7 @@ post:
   operationId: prepay
   deprecated: false
   tags: 
-   - Online Digital Wallet Payment Processing API`s
+   - Pockyt Integrated Payment APIs 
   parameters:
     - name: merchantNo
       in: header
