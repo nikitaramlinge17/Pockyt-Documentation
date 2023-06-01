@@ -4,7 +4,7 @@ post:
   operationId: consult
   deprecated: false
   tags: 
-    - Online Digital Wallet Payment Processing API`s   
+    - Recurring Payment APIs   
   parameters:
     - name: vendor
       in: header
