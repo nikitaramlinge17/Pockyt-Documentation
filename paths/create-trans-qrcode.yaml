@@ -1,5 +1,5 @@
 post:
-  summary: /create-trans-qrcode
+  summary: Create QR Code API
   description: Generates a QR code and transaction number for the customer to scan via their digital wallet app, enabling them to initiate the payment process. 
   operationId: /create-trans-qrcode
   deprecated: false
@@ -79,7 +79,7 @@ post:
       content: 
         application/json:
          schema: 
-           $ref: ../schemas/Instoreprepay.yaml
+           $ref: ../schemas/create-trans-qrcode.yaml
   responses:
     200: # Response                   
       description: Returns a 200 status to indicate.....

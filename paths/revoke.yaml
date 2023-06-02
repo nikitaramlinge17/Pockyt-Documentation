@@ -1,5 +1,5 @@
 post:
-  summary: Revoke
+  summary: Revoke Token
   description: Enables you to  inititae the authoization verification URL for an authorization that occurs at Pockyt. It is used to authorize the user based on the information provided in the request, making it an essential part of the authorization process.
   operationId: revovke
   deprecated: false

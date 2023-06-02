@@ -1,56 +1,57 @@
 post:
-  summary: Process API
-  description: Pockyt Integrated Payments offers a highly customizable payment form for businesses that want to retain complete control over the payment process.
-  operationId: process 
+  summary: Retrieve Customer
+  description: Use this API to retrieve the customer information stored in the record to use in calls to the SecurePay API.
+  operationId: Retrievecustomer 
   deprecated: false
   tags: 
-    -  Pockyt Integrated Payment APIs 
-  parameters:    
-    - name: paymentMethodNonce
+    -  Customer Record APIs
+  parameters:        
+    - name: timestamp
       in: header
-      description:  It is a one-time use reference ID of the payment method.
+      description: Current UTC time, correct format should be "yyyy-mm-ddTHH:MM:SSZ"
       required: true
       schema: 
         type: string
     - name: merchantNo
       in: header
-      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
-      required: true
-      schema: 
-       type: string
-    - name: paymentmethod
-      in: header
-      description:  Identifier of the wallet type being used.
+      description: Merchant ID in Pockyt's system
       required: true
       schema: 
         type: string
     - name: storeNo
       in: header
-      description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
-      required: true
-      schema: 
-        type: string
-    - name: transactionNo
-      in: header
-      description:  The ID of the transaction stored in the Pockyt system.
-      required: true
+      description: Store Number in Pockyt's system
+      required: true         
       schema: 
         type: string
     - name: verifySign
+      in: query
+      description: The API signature
+      required: true
+      schema: 
+        type: string
+    - name: customerCode
       in: header
-      description:  The parameter signature; used for authenticating and authorizing transaction requests.
+      description: The user-defined user's ID in Yuansfer's system.
+      required: true
+      schema: 
+        type: string
+    - name: customerNo
+      in: header
+      description: The auto-generated user's ID in Yuansfer's system.
       required: true
       schema: 
         type: string
   security: 
     - api_keys: []
       jwt: []
+  
   requestBody: 
-    content:
+    content: 
       application/json:
-        schema:
-          $ref: ../schemas/process.yaml
-  responses:    
+        schema: 
+          $ref: ../schemas/retrievecustomer.yaml
+  responses:
     200: # Response                   
       description: Returns a 200 status to indicate.....
       content: # Response Body
@@ -64,7 +65,7 @@ post:
                 type: string
               result:
                 type: object
-            example: # Sample Data 
+            example: # Sample Data              
     201:
       description: Returns a 201 status to indicate.....
       content: 
@@ -80,9 +81,9 @@ post:
             type: string 
             example: Error
     401:
-        description: Returns a 401 status to indicate.....
-        content: 
-          text/plain:
-            schema: 
-              type: string 
-              example: Error
+      description: Returns a 401 status to indicate.....
+      content: 
+        text/plain:
+          schema: 
+            type: string 
+            example: Error

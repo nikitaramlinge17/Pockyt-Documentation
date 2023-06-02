@@ -1,5 +1,5 @@
 post:
-  summary: Trans Query
+  summary: Transaction Query API
   description: .
   operationId: Trans-query 
   deprecated: false

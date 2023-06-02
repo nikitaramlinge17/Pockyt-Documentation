@@ -1,5 +1,5 @@
 post:
-  summary: cancel
+  summary: Cancel Transaction API
   description: Enables customer to cancel the purchase. 
   operationId: cancel
   deprecated: false

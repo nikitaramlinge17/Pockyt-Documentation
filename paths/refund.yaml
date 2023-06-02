@@ -1,5 +1,5 @@
 post:
-  summary: Refund
+  summary: Refund API
   description: Enables merchant systems to refund  payments in ease of use.
   operationId: refund
   deprecated: false

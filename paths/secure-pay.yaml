@@ -1,5 +1,5 @@
 post:
-  summary: Secure payment
+  summary: SecurePay API
   description: Enables merchant websites to send customers to Pockyt for payment processing.
   operationId: secure-pay 
   deprecated: false

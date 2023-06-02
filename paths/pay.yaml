@@ -1,5 +1,5 @@
 post:
-  summary: Pay
+  summary: Take Payment
   description: Enables you to to initiate a payment and process the results based on the status and operation instructions provided by Yuansfer, utilize this interface. Deductions will be made using  AccessToken. 
   operationId: pay
   deprecated: false

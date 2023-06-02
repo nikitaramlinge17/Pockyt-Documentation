@@ -1,5 +1,5 @@
 post:
-  summary: /prepay
+  summary: Take Payment API
   description: Enables customers to make the final confirmation before submitting payment which will process through the digital wallet servers.
   operationId: /prepay
   deprecated: false
