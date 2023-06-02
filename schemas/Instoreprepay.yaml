@@ -1,7 +1,17 @@
 properties: 
-  result:
-    type: object
-  ret_msg:
+  merchantNo:
+    type: integer
+  storeNo:
+     type: integer
+  verifySign:
      type: string
-  ret_code:
+  transactionNo:
+     type: integer
+  paymentBarcode:
+     type: integer
+  Vendor:
      type: string
+  
+
+  
+  
