@@ -3,7 +3,7 @@ info:
   title: Pockyt Online Payments API's
   version: 0.1.0
   description: 
-    $ref: introduction/_introduction.md
+    $ref: introduction/_introduction.md 
   license:
     name: Pockyt
     url: https://mapi.Pockyt.yunkeguan.com
@@ -14,12 +14,20 @@ info:
     url: https://gwocu.com/contact
 
 tags:
-  - name: Online Digital Wallet Payment Processing API`s
-    description: List of API`s 
-  - name : Payouts Service APIs 
-    description: List of API's
-  - name: In-Store Digital Wallet Payment Processing Sandbox API`s
-    description: List of API`s
+  - name: Universal APIs
+    description: List of Universal APIs 
+  - name : Pockyt In-store APIs 
+    description: List of In-store APIs
+  - name: Pockyt Hosted Checkout APIs
+    description: List of Hosted Checkout APIs
+  - name: Pockyt Integrated Payment APIs 
+    description: List of Integrated Payment APIs
+  - name: Customer Records APIs
+    description: List of Customer Record APIs
+  - name: Recurring Payment APIs
+    description: List of Recurring Payment APIs
+  - name: Payouts APIs
+    description: List of Payout APIs
 
 servers: 
   - url:  https://mapi.yuansfer.com
@@ -60,6 +68,22 @@ components:
       $ref: ./schemas/Instoreadd.yaml
     Instoreprepay:
       $ref: ./schemas/Instoreprepay.yaml
+    Instoretrans-query:
+      $ref: ./schemas/Instoretrans-query.yaml
+    create-trans-qrcode:
+      $ref: ./schemas/create-trans-qrcode.yaml
+    createbankaccount:
+      $ref: ./schemas/createbankaccount.yaml
+    registercustomer:
+      $ref: ./schemas/registercustomer.yaml
+    retrievecustomer:
+      $ref: ./schemas/retrievecustomer.yaml
+    TransferPayout:
+      $ref: ./schemas/TransferPayout.yaml
+    updatecustomer:
+      $ref: ./schemas/updatecustomer.yaml
+
+
   securitySchemes:
     api_keys:
       description: |
@@ -82,8 +106,8 @@ paths:
     $ref: ./paths/prepay.yaml
   /refund:
     $ref: ./paths/refund.yaml
-  /cancel:
-    $ref: ./paths/cancel.yaml
+  /Instorecancel:
+    $ref: ./paths/Instorecancel.yaml
   /consult:
     $ref: ./paths/consult.yaml
   /apply-token:
@@ -92,8 +116,6 @@ paths:
     $ref: ./paths/pay.yaml
   /revovke:
     $ref: ./paths/revoke.yaml
-  /transaction object:
-    $ref: ./paths/transaction object.yaml
   /register:
     $ref: ./paths/register.yaml
   /retrieve:
@@ -108,6 +130,20 @@ paths:
     $ref: ./paths/Instoreadd.yaml
   /Instoreprepay:
     $ref: ./paths/Instoreprepay.yaml
+  /Instoretrans-query:
+    $ref: ./paths/Instoretrans-query.yaml
+  /create-trans-qrcode:
+    $ref: ./paths/create-trans-qrcode.yaml
+  /createbankaccount:
+    $ref: ./paths/createbankaccount.yaml
+  /registercustomer:
+    $ref: paths/registercustomer.yaml
+  /retrievecustomer:
+    $ref: ./paths/retrievecustomer.yaml
+  /TransferPayout:
+    $ref: ./paths/TransferPayout.yaml
+  /updatecustomer:
+    $ref: ./paths/updatecustomer.yaml
 
   
    
