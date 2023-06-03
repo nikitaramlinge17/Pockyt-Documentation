@@ -60,8 +60,6 @@ components:
       $ref: ./schemas/retrieve.yaml
     update:
       $ref: ./schemas/update.yaml
-    Add:
-      $ref: ./schemas/Add.yaml
     trans-query:
       $ref: ./schemas/trans-query.yaml
     Instoreadd:
@@ -121,8 +119,6 @@ paths:
     $ref: ./paths/retrieve.yaml
   /update:
     $ref: ./paths/update.yaml
-  /Add:
-    $ref: ./paths/Add.yaml
   /trans-query:
     $ref: ./paths/trans-query.yaml
   /Instoreadd:
