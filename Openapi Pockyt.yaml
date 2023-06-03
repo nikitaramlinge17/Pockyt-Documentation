@@ -68,8 +68,6 @@ components:
       $ref: ./schemas/Instoreadd.yaml
     Instoreprepay:
       $ref: ./schemas/Instoreprepay.yaml
-    Instoretrans-query:
-      $ref: ./schemas/Instoretrans-query.yaml
     create-trans-qrcode:
       $ref: ./schemas/create-trans-qrcode.yaml
     createbankaccount:
@@ -82,7 +80,10 @@ components:
       $ref: ./schemas/TransferPayout.yaml
     updatecustomer:
       $ref: ./schemas/updatecustomer.yaml
-
+    Deletepay:
+      $ref: ./schemas/Deletepay.yaml
+    Asynchronoustransaction:
+      $ref: ./schemas/Asynchronoustransaction.yaml
 
   securitySchemes:
     api_keys:
@@ -130,8 +131,6 @@ paths:
     $ref: ./paths/Instoreadd.yaml
   /Instoreprepay:
     $ref: ./paths/Instoreprepay.yaml
-  /Instoretrans-query:
-    $ref: ./paths/Instoretrans-query.yaml
   /create-trans-qrcode:
     $ref: ./paths/create-trans-qrcode.yaml
   /createbankaccount:
@@ -144,6 +143,11 @@ paths:
     $ref: ./paths/TransferPayout.yaml
   /updatecustomer:
     $ref: ./paths/updatecustomer.yaml
+  /Deletepay:
+    $ref: ./paths/Deletepay.yaml
+  /Asynchronoustransaction:
+    $ref: ./paths/Asynchronoustransaction.yaml
+  
 
   
    
