@@ -1,0 +1,19 @@
+properties: 
+  accountToken: 
+    type: integer
+  amount:
+    type: integer
+  currency:
+    type: string
+  invoiceId:
+     type: string
+  paymentTime:
+     type: string
+  status:
+     type: string
+  transactionNo:
+     type: string
+  vendor:
+    type: string
+  verifySign: 
+    type: string
