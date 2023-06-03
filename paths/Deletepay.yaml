@@ -1,7 +1,7 @@
 post:
   summary: Delete Pay 
-  description: 
-  operationId: instoreadd
+  description: Manages Delete payee funding source account
+  operationId: DeletePay
   deprecated: false
   tags: 
     - Pockyt In-store APIs 
