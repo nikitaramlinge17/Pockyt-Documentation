@@ -5,8 +5,6 @@ properties:
     type: integer
   verifySign:
     type: string
-  amount:
-    type: integer
   currency:
     type: string
   settleCurrency:
@@ -30,4 +28,4 @@ properties:
   osType:
     type: string
   goodsInfo:
-    type: object
+    type: string

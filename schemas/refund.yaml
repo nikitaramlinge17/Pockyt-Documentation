@@ -1,17 +1,17 @@
 properties:
   merchantNo:
-      type: integer
+      type: string
   storeNo: 
-      type: integer
+      type: string
   verifySign:
       type: string
   refundAmount:
-      type: integer
+      type: string
   currency: 
-      type: string
+      type: number
   settleCurrency:
-      type: string
+      type: number
   transactionNo:
-      type: integer
+      type: string
   refundReference: 
       type: string

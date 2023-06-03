@@ -1,8 +1,8 @@
 properties: 
   merchantNo:
-    type: integer
+    type: string
   storeNo:
-     type: integer
+     type: string
   verifySign:
      type: string
   amount:

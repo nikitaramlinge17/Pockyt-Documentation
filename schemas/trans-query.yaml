@@ -1,10 +1,10 @@
 properties: 
-  merhcantNo:
-    type: integer
+  merchantNo:
+    type: string
   storeNo:
-    type: integer
+    type: string
   transactionNo:
-    type: integer
+    type: string
   verifySign: 
-    type: integer
+    type: string
   

@@ -1,15 +1,14 @@
 properties: 
-  merchantNo:
+  customerNo:
     type: string
+  accountToken:
+     type: string
+  merchantNo:
+     type: string
   storeNo:
+     type: string
+  timestamp:
      type: string
   verifySign:
      type: string
-  amount:
-     type: string
-  currency:
-     type: string
-  SettleCurrency:
-     type: string
-  reference:
-     type: string
+  

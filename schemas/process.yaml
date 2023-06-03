@@ -1,6 +1,4 @@
 properties: 
-  paymentMethodNonce:
-    type: string
   merchantNo:
     type: string
   paymentMethod:
@@ -8,8 +6,6 @@ properties:
   storeNo:
     type: string
   currency:
-    type: string
-  settleCurrency:
     type: string
   transactionNo:
     type: string
