@@ -80,6 +80,8 @@ components:
       $ref: ./schemas/updatecustomer.yaml
     Deletepay:
       $ref: ./schemas/Deletepay.yaml
+    Asynchronous:
+      $ref: ./schemas/Asynchronous.yaml
 
   securitySchemes:
     api_keys:
@@ -139,6 +141,9 @@ paths:
     $ref: ./paths/updatecustomer.yaml
   /Deletepay:
     $ref: ./paths/Deletepay.yaml
+  /Asynchronous:
+    $ref: ./paths/Asynchronous.yaml
+
   
 
   
