@@ -4,7 +4,7 @@ post:
   operationId: Retrievecustomer 
   deprecated: false
   tags: 
-    -  Customer Record APIs
+    -  Customer Records APIs
   parameters:        
     - name: timestamp
       in: header

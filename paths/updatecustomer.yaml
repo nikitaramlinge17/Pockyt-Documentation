@@ -4,7 +4,7 @@ post:
   operationId: Updatecustomer
   deprecated: false
   tags: 
-    -  Customer Record APIs
+    -  Customer Records APIs
   parameters:        
     - name: city
       in: header
