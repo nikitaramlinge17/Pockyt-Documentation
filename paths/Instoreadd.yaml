@@ -8,49 +8,49 @@ post:
   parameters:
     - name: merchantNo
       in: header
-      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process
       required: true
       schema: 
         type: string
     - name: storeNo
       in: header
-      description: A unique value created and assigned by Pockyt`s support team during the onboarding process.
+      description: A unique value created and assigned by Pockyt`s support team during the onboarding process
       required: true
       schema: 
         type: string  
     - name: storeAdminNo
       in: header
-      description: Used for tracking user roles and premissions in store level.
-      required: true
+      description: Used for tracking user roles and premissions in store level
+      required: false
       schema: 
         type: string
     - name: amount
       in: header
-      description: The transaction amount.
+      description: The transaction amount
       required: true
       schema: 
         type: string
     - name: currency
       in: header
-      description: The supported currency is "USD".
+      description: The supported currency is "USD"
       required: true
       schema:
         type: string
     - name: settleCurrency
       in: header
-      description: The supported currency is "USD".
+      description: The supported currency is "USD"
       required: true
       schema: 
         type: string
     - name: reference
       in: header
-      description: An Order ID used by the Point-of-Sale system can be associated with the Pockyt transactionNo.
+      description: An Order ID used by the Point-of-Sale system can be associated with the Pockyt transactionNo
       required: false
       schema:
         type: string
     - name: verifySign
       in: header
-      description: The calculated value used to encrypt the request message.
+      description: The calculated value used to encrypt the request message
       required: true
       schema: 
         type: string

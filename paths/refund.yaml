@@ -8,49 +8,49 @@ post:
   parameters:
       - name: merchantNo
         in: header
-        description:  The merchant's ID.
+        description:  The merchant's ID
         required: true
         schema: 
            type: string     
       - name: storeNo
         in: header
-        description:  The store's ID. 
+        description:  The store's ID
         required: true
         schema: 
           type: string  
       - name: refundAmount
         in: header
-        description:  The amount that needs to be refunded.
+        description:  The amount that needs has to be refunded
         required: true
         schema: 
           type: string 
       - name: currency
         in: header
-        description: The supported settlement currency "USD".
+        description: The supported settlement currency "USD"
         required: true
         schema: 
           type: number
       - name: settleCuurency
         in: header
-        description: The supported settlement currency "USD".
+        description: The supported settlement currency "USD"
         required: true
         schema: 
           type: number
       - name: transactionNo
         in: header
-        description:  Transaction number of orginal sale.
+        description:  Transaction number of orginal sale
         required: true
         schema: 
           type: string
       - name: reference
         in: header
-        description:  reference number of original sale.
+        description:  Reference number of original sale
         required: true
         schema: 
           type: string
       - name: refundReference 
         in: header
-        description: (Optional) ID of reference transaction in Point-of-sale.
+        description: ID of reference transaction in Point-of-sale.
         required: false
         schema: 
           type: string

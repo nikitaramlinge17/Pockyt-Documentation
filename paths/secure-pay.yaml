@@ -1,6 +1,6 @@
 post:
   summary: SecurePay API
-  description: Enables merchant websites to send customers to Pockyt for payment processing.
+  description: Enables merchant websites to send customers to Pockyt for receive payments.
   operationId: secure-pay 
   deprecated: false
   tags: 

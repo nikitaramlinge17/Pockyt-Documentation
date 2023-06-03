@@ -1,6 +1,6 @@
 post:
   summary: Take Payment
-  description: Enables you to to initiate a payment and process the results based on the status and operation instructions provided by Yuansfer, utilize this interface. Deductions will be made using  AccessToken. 
+  description:  To initiate a payment and process the results based on the status and operation instructions provided by Yuansfer, utilize this interface. Deductions will be made using AccessToken.
   operationId: pay
   deprecated: false
   tags: 
@@ -8,13 +8,13 @@ post:
   parameters:
     - name: merchantNo
       in: header
-      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process
       required: true
       schema: 
         type: string     
     - name: storeNo
       in: header
-      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process
       required: true
       schema: 
         type: string  

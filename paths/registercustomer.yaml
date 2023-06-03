@@ -4,7 +4,7 @@ post:
   operationId: registercustomer
   deprecated: false
   tags: 
-    -  Customer Record APIs
+    -  Customer Records APIs
   parameters:        
     - name: zip
       in: header

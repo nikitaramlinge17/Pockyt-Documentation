@@ -1,6 +1,6 @@
 post:
   summary: Cancel Transaction API
-  description: Enables customer to cancel the purchase. 
+  description: Enables canceling a payment transaction in either use case when the transaction is abandoned before submission, ensuring that merchants can efficiently manage their transactions. 
   operationId: cancel
   deprecated: false
   tags: 
@@ -8,31 +8,31 @@ post:
   parameters:
     - name: merchantNo
       in: header
-      description:  the merchant`s ID.
+      description:  the merchant`s ID
       required: true
       schema: 
         type: string     
     - name: storeNo
       in: header
-      description:  the store ID.
+      description:  the store ID
       required: true
       schema: 
         type: string  
     - name: transactionNo
       in: header
-      description: Transaction number of original sale.
+      description: Transaction number of original sale
       required: true
       schema: 
         type: string       
     - name: reference 
       in: header
-      description:  reference number of orginial sale.
+      description:  reference number of orginial sale
       required: true
       schema: 
         type: number
     - name: VerifySign
       in: header
-      description:  the paramter signature.
+      description:  the paramter signature
       required: true
       schema: 
         type: string

@@ -6,39 +6,39 @@ post:
   tags: 
     -  Pockyt Integrated Payment APIs 
   parameters:    
-    - name: paymentMethodNonce
+    - name: paymentGatewayID
       in: header
-      description:  It is a one-time use reference ID of the payment method.
+      description:  It is a one-time-use reference ID of the payment method, provided by partner gateway
       required: true
       schema: 
         type: string
     - name: merchantNo
       in: header
-      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt`s support team during the onboarding process
       required: true
       schema: 
        type: string
     - name: paymentmethod
       in: header
-      description:  Identifier of the wallet type being used.
+      description:  Identifier of the wallet type being used
       required: true
       schema: 
         type: string
     - name: storeNo
       in: header
-      description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt's support team during the onboarding process
       required: true
       schema: 
         type: string
     - name: transactionNo
       in: header
-      description:  The ID of the transaction stored in the Pockyt system.
+      description:  The ID of the transaction stored in the Pockyt system
       required: true
       schema: 
         type: string
     - name: verifySign
       in: header
-      description:  The parameter signature; used for authenticating and authorizing transaction requests.
+      description:  The parameter signature; used for authenticating and authorizing transaction requests
       required: true
       schema: 
         type: string

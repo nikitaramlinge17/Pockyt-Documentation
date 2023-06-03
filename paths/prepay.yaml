@@ -8,67 +8,67 @@ post:
   parameters:
     - name: merchantNo
       in: header
-      description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt's support team during the onboarding process
       required: true
       schema: 
         type: string     
     - name: storeNo
       in: header
-      description:  A unique value created and assigned by Pockyt's support team during the onboarding process.
+      description:  A unique value created and assigned by Pockyt's support team during the onboarding process
       required: true
       schema: 
         type: string
     - name: Amount
       in: header
-      description:  The payment amount that the merchant requests to receive in currency order.
+      description:  The payment amount that the merchant requests to receive in currency order
       required: true
       schema: 
         type: number  
     - name: currency
       in: header
-      description:  Support transaction currenices are "USD", "CNY".
+      description:  Support transaction currenices are "USD", "CNY"
       required: true
       schema: 
         type: number
     - name: settleCuurency
       in: header
-      description: The Supported settlement currenices is "USD".
+      description: The Supported settlement currenices is "USD"
       required: true
       schema: 
         type: string
     - name: Vendor
       in: header
-      description:  Possible payment channels "alipay" , wechatpay".
+      description:  Possible payment channels "alipay" , wechatpay"
       required: true
       schema: 
         type: string
     - name: ipnUrl
       in: header
-      description:  The instant payment notification handler URL; the IPN URL must be secure.
+      description:  The instant payment notification handler URL; the IPN URL must be secure
       required: true
       schema: 
         type: string
     - name: Openid
       in: header
-      description: Required when terminal='MINIPROGRAM' and vendor='wechatpay'.
+      description: Required when terminal='MINIPROGRAM' and vendor='wechatpay'
       required: true
       schema: 
         type: string
     - name: Reference
       in: header
-      description:  The invoice number in the merchant's system.
+      description:  The invoice number in the merchant's system
       required: true
       schema: 
         type: string
     - name: Terminal
       in: header
-      description:  The possible values are "MINIPROGRAM", "APP".
+      description:  The possible values are "MINIPROGRAM", "APP"
       required: true
       schema: 
         type: string
     - name: Description
       in: header
-      description: (Optional) The description of transaction which will be displayed on the invoice.
+      description: (Optional) The description of transaction which will be displayed on the invoice
       required: false
       schema: 
         type: string
@@ -80,13 +80,13 @@ post:
        type: string    
     - name: Timeout
       in: header
-      description: (Optional) The timeout in minutes. The default value is 120.
+      description: (Optional) The timeout in minutes. The default value is 120
       required: false
       schema: 
        type: integer    
     - name: verifySign  
       in: header
-      description: (Optional) The parameter signature; used for authenticating and authorizing transaction requests.
+      description: (Optional) The parameter signature; used for authenticating and authorizing transaction requests
       required: true
       schema: 
         type: string

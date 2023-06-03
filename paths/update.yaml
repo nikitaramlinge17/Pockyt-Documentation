@@ -1,6 +1,6 @@
 post:
   summary: Update Payee
-  description: Enables to  update payee details such as name, address, email, and bank information by providing customer Number and new details. 
+  description: To  update payee details such as name, address, email, and bank information by providing customer Number and new details.The API returns a confirmation message upon successful execution
   operationId: Update
   deprecated: false
   tags: 
