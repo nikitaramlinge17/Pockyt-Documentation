@@ -1,5 +1,5 @@
 post:
-  summary: Add Payee Bank 
+  summary: Add Payee Bank Account
   description: Add a new payment method for the payee, such as a bank account. This endpoint requires the user to provide the Merchant ID and payment details in the request payload.
   operationId: /account/create/bank-account
   deprecated: false
